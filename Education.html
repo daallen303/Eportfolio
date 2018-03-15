@@ -1,0 +1,121 @@
+<html>
+<title>
+Resume
+</title>
+<head><link rel="stylesheet" type="text/css" href="./eportfolio.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<div class="mainmenu">
+<span id = "home" class="menubutton">Home</span>
+<span  id = "education" class="menubutton">Education</span>
+<span  id = "aboutme" class="menubutton">About me</span>
+<span id = "contact" class="menubutton">Contact</span>
+<span  id = "resume" class="menubutton">Resume</span>
+<span  id = "projects" class="menubutton">Projects</span>
+
+
+</div>
+<script>document.getElementById("education").style.color = "rgb(255,255,255)";</script>
+<body id="body">
+<span id="scroll"></span>
+<span id="educationbody">
+
+<h1 class="headertan">Studies</h1>
+<br>
+<p>
+I graduated from wheat ridge high school in 2013 and went on to <span class="blue">Colorado Mesa University</span> where I graduated with a Bachelor of science in Computer Science and a minor in Mathematics. 
+I was undecided going into my freshman year and after an intro to web developement course I got hooked on coding and have been 
+studying various languages ever since. I always enjoyed finding solutions to math problems
+ and I think the problem soving involved in coding has been what keeps my interest. I also love the ability to be
+ creative and artistic in a way that uses skills typically seen as more analog.
+ <br></p>
+ <p>My favorite classes while attending Mesa were Calculus 2, <span class="blue">Web Design 3</span>, Java, Software Engineering, Mythology, Art History, and robotics.</p>
+ <h1 class="headergrey">Awards and extra curriculars</h1>
+ <p>During my years at Colorado Mesa I prided myself on being a good student making my way onto the <span class="maroon">Dean's list</span> of becoming a part of the Nationional Society of Leadership and success
+ and Upsilon Pi Epsilon honor society. I wrote four articles for Horizon magazine (the schools semi annual magazine) in the 2015 winter and 2016 spring editions on various topics.
+ I also enjoyed intramnural athletics including ultimate frisbee, basketball, soccer, and flag football and tried to make it to as many campus events as possible, especially when free food or <span class="Important">music</span> was invlolved.</p> 
+ 
+ <br>
+ 
+ 
+
+ 
+ 
+ </span>
+
+</body>
+</html>
+<script>
+	var important = document.getElementsByClassName("maroon");
+	var important2 = document.getElementsByClassName("blue");
+	transitionto();
+
+function transitionto()
+{
+	
+	var i=0;
+	var k = 40;
+	var l = 255;
+	var Interval = setInterval( function () {
+		i++;
+		if(i<255)
+		{
+			l--;
+			if(i>225)
+			{
+			 for(j=0; j<important2.length;j++)important2[j].style.color = "rgb("+l+","+l+","+l+")";
+			 for(m=0; m<important.length;m++)important[m].style.color = "rgb("+l+","+l+","+l+")";
+		 }
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	document.getElementById("educationbody").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	if(i>175) 
+	{
+		document.getElementById("education").style.fontSize = ""+k+"px";
+		k-=.5;
+	}
+	}else 
+		{
+			
+		clearInterval(Interval);
+	}
+	}, 5);
+	
+}
+function transitionFrom(name){
+	document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
+		for(j=0; j<important2.length;j++)important2[j].style.color = "blue";
+			 for(m=0; m<important.length;m++)important[m].style.color = "maroon";
+	var i=125;
+	var Interval = setInterval( function () {
+		i--;
+		if(i>0)
+		{
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	document.getElementById("educationbody").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+		}else 
+		{
+			clearInterval(Interval);
+			document.location.href = "./"+name+".html";
+		}
+	}, 5);
+}
+$("#aboutme").click( function () {
+	transitionFrom("Aboutme");
+	
+});
+$("#home").click( function () {
+			transitionFrom("Home");
+});
+
+$("#contact").click( function () {
+		transitionFrom("Contact");
+});
+
+$("#resume").click( function () {
+		transitionFrom("Resume");
+});
+$("#projects").click( function () {
+		transitionFrom("Projects");
+	
+});
+</script>

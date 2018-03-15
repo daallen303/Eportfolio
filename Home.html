@@ -1,0 +1,87 @@
+<html>
+<title>
+Home
+</title>
+<head><link rel="stylesheet" type="text/css" href="./eportfolio.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<div class="mainmenu">
+
+<span id = "home" class="menubutton">Home</span>
+<span  id = "education" class="menubutton">Education</span>
+<span  id = "aboutme" class="menubutton">About me</span>
+<span id = "contact" class="menubutton">Contact</span>
+<span  id = "resume" class="menubutton">Resume</span>
+<span  id = "projects" class="menubutton">Projects</span>
+
+
+</div>
+<script>	document.getElementById("home").style.color = "rgb(255,255,255)";</script>
+<body id="body">
+	<span id="mainbody">
+	I am a recent <span class="tan">Computer Science</span> graduate from Colorado Mesa University with a desire to create <span class="blue">clean</span>, <span class="maroon">efficient</span>, and <span class="important">UI/UX</span> driven web sites and applications.
+	  
+</span>
+</body>
+</html>
+<script>
+
+transitionto();
+
+function transitionto()
+{
+	var k = 20;
+	var i=0;
+	var j = -1;
+	var Interval = setInterval( function () {
+		i++;
+		if(i<255)
+		{
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	document.getElementById("mainbody").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+		if(i>175) 
+	{
+		document.getElementById("home").style.fontSize = ""+k+"px";
+		k-=.333;
+	}
+		}else clearInterval(Interval);
+	}, 5);
+	
+}
+	function transitionFrom(name){
+				document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
+	var i=125;
+	var Interval = setInterval( function () {
+		i--;
+		if(i>0)
+		{
+			document.getElementById("home").style.color = "rgb(0,0,0)";
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	document.getElementById("mainbody").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+		}
+		else
+		{
+			clearInterval(Interval);
+			 document.location.href = "./"+name+".html";
+		 }
+	}, 5);
+}
+
+$("#aboutme").click( function () {
+transitionFrom("Aboutme");
+});
+$("#contact").click( function () {
+transitionFrom("Contact");
+});
+
+$("#resume").click( function () {
+transitionFrom("Resume");
+});
+$("#education").click( function () {
+transitionFrom("Education");
+});
+$("#projects").click( function () {
+	transitionFrom("Projects");
+});
+</script>

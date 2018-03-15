@@ -1,0 +1,584 @@
+.mainmenu
+{
+width: 100%;
+height: 20px;
+position: absolute;
+top:0px;
+padding-bottom:10px;
+}
+.menubutton
+{
+  width: 60px;
+}
+#education
+{
+font-size: 40px;
+
+}
+#projects
+{
+  font-size: 40px;
+}
+
+#home
+{
+font-size: 20px;
+}
+#resume
+{
+font-size: 30px;
+}
+#aboutme
+{
+font-size: 30px;
+}
+#contact
+{
+
+  font-size: 25px;
+}
+/*#education:hover
+{
+font-size: 40px;
+color: blue;
+}
+#projects:hover
+{
+  font-size: 40px;
+  color: grey;
+}
+
+#home:hover
+{
+  color: tan;
+font-size: 20px;
+}
+#resume:hover
+{
+font-size: 30px;
+color: maroon;
+}
+#aboutme:hover
+{
+font-size: 30px;
+color: orange;
+}
+#contact:hover
+{
+color: green;
+  font-size: 25px;
+}
+*/
+.menubutton:hover
+{
+  color: blue;
+}
+.maroon
+{
+color: maroon;
+}
+.blue
+{
+color: blue;
+}
+.tan
+{
+color:tan;
+}
+.mainmenu a:visited
+{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+}
+.mainmenu a:hover
+{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: tan;
+}
+.mainmenu a:active
+{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: tan;
+}
+li
+{
+    list-style-type: none;
+    float: left;
+    margin-right: 120px;
+    margin-top: 0px;
+    height: 10px;
+    text-align: center;
+
+}
+
+#body
+{
+background-color: rgb(0,0,0);
+margin: 0px;
+}
+
+#mainbody
+{
+    background-color:rgb(0,0,0);
+width: 80%;
+margin-top: 20%;
+height: 100%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+font-size: 30px;
+
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    position: absolute;
+    top: 400px;
+}
+#slideshow
+{
+opacity: 0;
+transition:.8s ease-in-out;
+   width: 1200px;
+   height: 500px; 
+   background-image : url(./pictures/slideshow1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+    background-position: left top;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0px;
+   position: relative;
+   margin-top: 40px;
+}
+#slideshowtext
+{
+font-family: "Times New Roman", Times, serif;
+display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top : 0px;
+  left:0px;
+  height: 500px;
+  width: 300;
+  text-align: center;
+  font-size: 35px;
+}
+.piccaption
+{
+  text-align: center;
+  width: 250px;
+  display: block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2;
+}
+#left
+{
+width: 50;
+   height: 50px; 
+   background-image : url(./pictures/left.png);
+   -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-size: cover;
+   position: fixed;
+   top: 250px;
+   left: 20px;
+   z-index: 2;
+}
+#right
+{
+width: 50;
+   height: 50px; 
+   background-image : url(./pictures/right.png);
+   -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-size: cover;
+    position: fixed;
+   top: 250px;
+   right: 20px;
+   z-index: 2;
+}
+#projectsbody a
+{
+  display: block;
+float: left;
+width: 100%;
+height: 400px;
+}
+#projectsbody
+{
+  position: absolute;
+  top: 45px;
+  width: 80%;
+  right:0px;
+  left: 0px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.project
+{
+  height: 200px;
+  margin-top: 20px;
+  float: right;
+  width:45%
+}
+.projectpics
+{
+  margin-top: 20px;
+  float: right;
+  height: 400px;
+}
+p
+{
+margin-left: 20px;
+}
+.screenshot
+{
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+  opacity: 0;
+  transition: .8s;
+}
+
+.headergrey
+{
+color: grey;
+font-size: 24;
+font-style: bold;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+float: right;
+height: 22px;
+width: 100%;
+}
+.headergrey
+{
+color: grey;
+font-size: 35px;
+font-style: bold;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+float: right;
+height: 30px;
+width: 100%;
+margin-bottom: 5px;
+}
+
+.headermaroon
+{
+color: maroon;
+font-size: 35px;
+font-style: bold;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+float: right;
+height: 22px;
+width: 100%;
+}
+.headertan
+{
+font-size: 35px;
+color: tan;
+font-style: bold;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+float: right;
+height: 30px;
+width: 100%;
+margin-bottom: 5px;
+}
+#emailme
+{
+  float: left;
+  margin-top: 80px;
+  margin-left: 40px;
+  width: 380px;
+}
+#title
+{
+  text-align: center;
+  padding-left: 80px;
+font-size: 40;
+}
+
+input[type=text]
+{
+ border-width: 2px;
+  border-color: grey;
+  border-style: solid;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 5px;
+  background-Color: white;
+  opacity: 0;
+  
+  
+}
+input[type=submit]
+{
+  width: 150px;
+  height: 30px;
+  margin-left: 228px;
+  margin-top: 5px;
+  background-color: white;
+  border-style:groove;
+  font-size: 20px;
+  opacity: 0;
+
+}
+input[type=submit]:hover
+{
+  width: 150px;
+  height: 30px;
+  margin-left: 228px;
+  margin-top: 5px;
+  background-color: white;
+  border-style:groove;
+  color: black;
+  font-size: 20px;
+
+}
+textarea
+{
+  width: 300px;
+  resize: none;
+  background-Color: white;
+  border-color: grey;
+  opacity: 0;
+   border-width: 2px;
+  border-color: grey;
+  border-style: solid;
+}
+
+th
+{
+text-align: left;
+width: 80px;
+}
+#socialtitle
+{
+text-align: center;
+font-size: 40;
+}
+#insta 
+{
+background-image: url(./pictures/instagram.png);
+height: 64px;
+width: 65px;
+display: block;
+float: left;
+margin-left: 30px;
+
+}
+#projectlink
+{
+  color: blue;
+}
+#projectlink:hover
+{
+  color: tan;
+}
+#airplane
+{
+  margin-top:70px;
+  margin-left:40px;
+  float: left;
+}
+#socialmedia
+{
+  width: 380px;
+  float: left;
+   float: left;
+  margin-top: 80px;
+  margin-left: 40px;
+  width: 380px;
+}
+.important
+{
+color: grey;
+}
+.important2
+{
+color: white;
+}
+#java
+{
+color: maroon;
+font-style: italic;
+}
+#cpp
+{
+color: blue;
+font-style: italic;
+}
+#visualbasic
+{
+color: tan;
+font-style: italic;
+}
+#s1
+{
+display: none;
+}
+#description2
+{
+display: none;
+}
+#description3
+{
+display: none;
+}
+#description4
+{
+display: none;
+}
+#description5
+{
+display: none;
+}
+#description6
+{
+display: none;
+}
+#description7
+{
+display: none;
+}
+#description8
+{
+display: none;
+}
+#description9
+{
+display: none;
+}
+#description10
+{
+display: none;
+}
+
+hr
+{
+border-color: black;
+}
+#educationbody
+{
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+margin-top: 100px;
+font-family: "Times New Roman", Times, serif;
+}
+#educationbody p
+{
+  line-height: 2;
+  margin: 0px;
+  text-indent: 50px;
+  font-family: sans-serif;
+}
+#scroll
+{
+display: none;
+}
+#resumebody
+{
+width: 70%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-style: solid;
+margin-top: 50px;
+padding: 10px;
+border-width: 1px;
+height: 1100px;
+}
+
+.address
+{
+text-align: center;
+}
+.description
+{
+font-family: sans-serif;
+display: block;
+    color: black;
+    background-color: black;
+  height: 200px;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2;
+}
+.container
+{
+  height: 600px;
+  width: 100%;
+  margin-top: 20px;
+}
+.descriptionresume
+{
+font-family: sans-serif;
+  width: 100%;
+   text-indent: 100px;
+   height: 20px;
+   margin-bottom: 5px;
+   margin-top: 5px;
+}
+.date
+{
+float: right;
+text-align: right;
+text-align: right;
+}
+.name
+{
+text-align: center;
+}
+.medialink
+{
+ opacity: 0;
+}
+#contactinfo
+{
+width: 60%;
+font-size: 50px;
+display: block;
+margin-left:auto;
+margin-right: auto;
+float: left;
+margin-top: 200px;
+margin-left:60px;
+}
+#social a
+{
+color: black;
+}
+#social
+{
+ float: right;
+ width: 35%;
+ text-align: center;
+margin-top: 200px;
+
+}

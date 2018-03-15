@@ -1,0 +1,125 @@
+<html><div class="mainmenu">
+<title>
+Contact
+</title>
+<head><link rel="stylesheet" type="text/css" href="./eportfolio.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<div class="mainmenu">
+
+<span id = "home" class="menubutton">Home</span>
+<span  id = "education" class="menubutton">Education</span>
+<span  id = "aboutme" class="menubutton">About me</span>
+<span id = "contact" class="menubutton">Contact</span>
+<span  id = "resume" class="menubutton">Resume</span>
+<span  id = "projects" class="menubutton">Projects</span>
+
+
+</div>
+<script>
+	document.getElementById("contact").style.color = "rgb(255,255,255)";
+	</script>
+<body id="body">
+	<span id="contactinfo">
+	<div id="myemail"><span class="blue">Email: </span><span >daallen@gmail.com</span></div>
+	<div id="myphone"><span class="maroon">Phone: </span><span>303-257-5967</span></div>
+	</span>
+	<span id="social">
+	<h1 id="socialtitle" class="tan">Check me out on</h1>
+	<a target="_blank" href="https://www.instagram.com/daallen303/">Instagram</a>
+	<a target="_blank" href="https://soundcloud.com/user-767555606">Soundcloud</a>
+	<a  target="_blank" href="https://github.com/dapple303">Git hub</a>
+	</span>
+	
+<!--<form id="emailme" action="./sendemail.php" method="POST">
+<h1 id="title" class="important">Email me</h1>
+<table>
+<tr><th class="maroon">Name</th><td><input type = "text" name="name"></td></tr>
+<tr><th class="maroon">Email</th><td><input type = "text" name="email"></td></tr>
+<tr><th class="maroon">Message</th><td><textarea rows="10" cols = "30" name="message"></textarea></td></tr>
+</table>
+<input class="blue" type="submit" text="send away">
+</form>
+<div id="socialmedia">
+<h1 id="socialtitle" class="tan">Follow me</h1>
+<a id="insta" class="medialink" href="https://www.instagram.com/los_dapple/?hl=en"></a>
+</div>-->
+</body>
+</html>
+<script>
+	transitionto();
+//var x= document.getElementsByTagName("input");
+//var m= document.getElementsByClassName("medialink");
+function transitionto()
+{
+	var k = 25;
+	//var x = document.getElementsByTagName("input");
+	var i=0;
+	var Interval = setInterval( function () {
+		i++;
+		
+		if(i<255)
+		{
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+
+if(i>175)
+{ 
+		document.getElementById("contact").style.fontSize = ""+k+"px";
+		k-= .41;
+		//for(y=0;y<x.length;y++)document.getElementsByTagName("input")[y].style.opacity = "1";
+			//document.getElementsByTagName("textarea")[0].style.opacity = "1";
+			//for(l=0;l<document.getElementsByClassName("medialink").length;l++)document.getElementsByClassName("medialink")[l].style.opacity = "1";
+		}
+	}
+	else 
+	{
+	clearInterval(Interval);
+}
+	}, );
+	
+}
+
+function transitionFrom(name)
+{
+	document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
+	var x = document.getElementsByTagName("input");
+	var i=125;
+	var Interval = setInterval( function () {
+		i--;
+		if(i>0)
+		{
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	//for(y=0;y<x.length;y++)document.getElementsByTagName("input")[y].style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	//document.getElementsByTagName("textarea")[0].style.backgroundColor = "rgb("+i+","+i+","+i+")";
+		document.getElementById("contact").style.color = "rgb(0,0,0)";
+		}
+		else 
+		{
+			clearInterval(Interval);
+			document.location.href = "./"+name+".html";
+		}
+	}, 5);
+	
+}
+$("#aboutme").click( function () {
+	transitionFrom("Aboutme");
+});
+
+
+$("#resume").click( function () {
+		transitionFrom("Resume");
+	
+});
+$("#projects").click( function () {
+	transitionFrom("Projects");
+	
+});
+$("#home").click( function () {
+	transitionFrom("Home");
+});
+$("#education").click( function () {
+	transitionFrom("Education");
+});
+
+</script>

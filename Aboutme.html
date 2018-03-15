@@ -1,0 +1,207 @@
+<html>
+<title>
+About me
+</title>
+<head><link rel="stylesheet" type="text/css" href="./eportfolio.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<div class="mainmenu">
+<span id = "home" class="menubutton">Home</span>
+<span  id = "education" class="menubutton">Education</span>
+<span  id = "aboutme" class="menubutton">About me</span>
+<span id = "contact" class="menubutton">Contact</span>
+<span  id = "resume" class="menubutton">Resume</span>
+<span  id = "projects" class="menubutton">Projects</span>
+
+
+</div>
+<script>document.getElementById("aboutme").style.color = "rgb(255,255,255)";</script>
+<body id="body">
+	<span id="slideshow">
+	<span id ="slideshowtext">
+	</span>
+	</span>
+	
+<span id ="left">
+</span>
+<span id = "right"></span>
+</body>
+<div id="description1" value="camping" > <span class="piccaption">Camping is my escape <!--There is nothing like sitting around a campfire and looking up at the stars. 
+There will always be times when you need to escape and camping offers me a certain peice of mind that is hard to find anywhere else.-->
+</span></div>
+<div id="description2" value="basketball">
+	<span class="piccaption">
+		Sports are my entertainment
+	<!--Sports have always been a huge part of my life, I've learned so many valuable lessons and made so many
+	great memories. I recently started coaching 
+	 basketball and I love it. I hope to continue coaching and enjoying sports for a very long time.-->
+	 </span>
+	</div>
+<div id="description3" value="rock climbing" > 
+	<span class="piccaption">Climbing is my stress relief
+	<!--Climbing has pushed me to do things I would have previously considered crazy.
+	It is such a great physical work out, but also such a great test of your mental capabilities. 
+	Each climb is a new puzzle and a new challenge and completing that challenge is a wonderful feeling. --></span>
+</div>
+<div id="description4"value="test4" ><span class="piccaption">Music is my hobby<!--I've always loved music and have wanted to be able to play guitar. Finally my sophmore year in 
+college I bought a guitar and put the hours in to learn it and I haven't looked back since. 
+Learning guitar taught me how rewarding it is to go after my goals and schieve them.--></span> </div>
+<div id="description5"value="test5" > <span class="piccaption">Traveling is my goal<!--Traveling around with friends and seeing new places is about as good as it gets. --></span> </div> 
+
+<div id="description7"value="test7"><span class="piccaption">Colorado is my home<!--I came to Grand Junction for college and it has since become my home. Colorado Mesa University has 
+given me so many opportunities that I am forever grateful for and one of those is the opportunity to explore the mountains, waters, and desert 
+of the western slope of Colorado.--> </span></div>
+<div id="description8"value="test8" ><span class="piccaption"><!--Whether in the winter or summer, I always look to find ways to get out and enjoy life.--></span></div>
+<div id="description9"value="test9" class="piccaption"><span class="piccaption">Friends are my backbone<!--The people I surround myself with mean everything to me. Having others around to push you and support you 
+can give you the confidence to achieve great things.--></span></div>
+<div id="description10"value="test10" ><span class="piccaption">Nature is my meditation<!--The calm moments of life need to be cherished. To quote the great Ferris Bueler 
+"Life moves pretty fast sometimes, if you don't stop every once in a while you might miss it."--></span></div>
+
+</html>
+<script>
+	document.getElementById("aboutme").style.color = "rgb(255,255,255)";
+	transitionto();
+	
+function transitionto()
+{
+	var i=0;
+	var k = 30;
+	var Interval = setInterval( function () {
+		i++;
+	
+		if(i<255)
+		{
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+				if(i<175) 
+	{
+		document.getElementById("aboutme").style.fontSize = ""+k+"px";
+		k-=.25;
+	}
+		}else 
+		{
+			document.getElementById("slideshow").style.opacity =1;
+			clearInterval(Interval);
+		}
+	}, 5);
+	
+}
+
+var interval
+var imagenum = 1;
+document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
+
+
+var timer = function(){
+interval = setInterval(function(){ 
+	if(imagenum <=9)imagenum +=1;
+	else imagenum = 1; 
+	document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
+	var slidenumber = "./pictures/slideshow"+imagenum+".jpg";
+    document.getElementById("slideshow").style.backgroundImage = "url('"+slidenumber+"')";
+
+    }, 5000);
+
+};
+timer();
+
+function transitionFrom(name)
+{
+		document.getElementById("slideshow").style.opacity =0;
+		document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
+	var i=125;
+	var newInterval = setInterval( function () {
+		i--;
+		if(i>0)
+		{
+	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
+	document.getElementById("aboutme").style.color = "rgb(0,0,0)";
+		}
+		else 
+		{
+		
+			clearInterval(newInterval);
+			document.location.href = "./"+name+".html";
+			
+		}
+	}, 5);
+}
+$("#left").click( function() {
+	if(imagenum >= 2)imagenum -= 1;
+	else imagenum = 10;
+	document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
+	var slidenumber = "./pictures/slideshow"+imagenum+".jpg";
+    document.getElementById("slideshow").style.backgroundImage = "url('"+slidenumber+"')";
+    clearInterval(interval);
+    timer();
+});
+$("#right").click( function() {
+	if(imagenum <= 9)imagenum +=1;
+	else imagenum = 1;
+	 document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
+	var slidenumber = "./pictures/slideshow"+imagenum+".jpg";
+    document.getElementById("slideshow").style.backgroundImage = "url('"+slidenumber+"')";
+   
+    clearInterval(interval);
+    timer();
+    
+});
+$("#slideshow").hover( function () {
+	
+	document.getElementById("slideshowtext").style.display =  "block";
+	clearInterval(interval);
+});
+
+$("#slideshow").mouseout( function () {
+	document.getElementById("slideshowtext").style.display =  "none";
+	timer();
+}); 
+$("#left").hover( function () {
+	document.getElementById("slideshowtext").style.display =  "block";
+});
+$("#left").mouseout( function () {
+	clearInterval(interval);
+	Timer();
+});
+$("body").hover( function () {
+});
+$("#right").hover( function () {
+	document.getElementById("slideshowtext").style.display =  "block";
+	clearInterval(interval);
+});
+$("#right").mouseout( function () {
+	clearInterval(interval);
+	Timer();
+});
+$("#home").click( function () {
+	document.location.href = "./Home.html";
+});
+
+$("#home").click( function () {
+transitionFrom("Home");
+});
+
+$("#contact").click( function () {
+	transitionFrom("Contact.html");
+});
+
+$("#resume").click( function () {
+		transitionFrom("Resume");
+});
+$("#education").click( function () {
+		transitionFrom("Education");
+	
+});
+$("#projects").click( function () {
+	transitionFrom("Projects");
+	
+});
+
+/*<div id="description6" value="test6" ><span class="piccaption">  <!--My biggest career goal has always been to enjoy my work and I believe that is achieved through good relations 
+with your coworkers, being involved in the company's mission, and having a positive outlook.--></span> </div>
+
+
+
+*/
+
+</script>
