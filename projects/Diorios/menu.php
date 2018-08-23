@@ -7,7 +7,6 @@
 	require_once("Config.php");
 	require_once("Other.Class.php");
 	require_once("Calzones.Class.php");
-
   function dm($amount)
   {
     $string = "" . $amount;
@@ -37,9 +36,6 @@
     return string;
   }
 </script>
-
-
-
 <html>
 <head>
   <meta charset="UTF-8" />

@@ -4,33 +4,45 @@ Contact
 </title>
 <head><link rel="stylesheet" type="text/css" href="./eportfolio.css" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<div class="mainmenu">
 
-<span id = "home" class="menubutton">Home</span>
-<span  id = "education" class="menubutton">Education</span>
-<span  id = "aboutme" class="menubutton">About me</span>
-<span id = "contact" class="menubutton">Contact</span>
-<span  id = "resume" class="menubutton">Resume</span>
-<span  id = "projects" class="menubutton">Projects</span>
-
-
+<div class="container">
+	<div class="row">
+<div id="mainmenu" class="col-lg-12">
+<span class="col-lg-2"><span id="home" class="menubutton">Home</span></span>
+<span class="col-lg-2"><span id="education" class="menubutton">Education</span></span>
+<span class="col-lg-2"><span id="aboutme" class="menubutton">About me</span></span>
+<span class="col-lg-2"><span id="contact" class="menubutton">Contact</span></span>
+<span class="col-lg-2"><span  id="resume" class="menubutton">Resume</span></span>
+<span class="col-lg-2"><span  id="projects" class="menubutton">Projects</span></span>
 </div>
+</div>
+</div>
+
+
 <script>
-	document.getElementById("contact").style.color = "rgb(255,255,255)";
+	document.getElementById("contact").style.color = "rgb(125,125,125)";
 	</script>
-<body id="body">
-	<span id="contactinfo">
-	<div id="myemail"><span class="blue">Email: </span><span >daallen@gmail.com</span></div>
-	<div id="myphone"><span class="maroon">Phone: </span><span>303-257-5967</span></div>
+	<div class="container">
+		<div class="row">
+	<h1 class="col-lg-10"><span class="tan">Contact info</span></h1>
+	<div class="col-lg-10"><span class="blue">Email: </span><span >daallen303@gmail.com</span></div>
+	<div class="col-lg-10"><span class="maroon">Phone: </span><span>303-257-5967</span></div>
+	<h1 class="col-lg-10"><span class="tan">Find me online</span></h1>
+	<a  class="col-lg-10" target="_blank" href="www.linkedin.com/in/daniel-allen-595595157">LinkedIn</a>
+	<a  class="col-lg-10" target="_blank" href="https://www.instagram.com/daallen303/">Instagram</a>
+	<a class="col-lg-10" target="_blank" href="https://soundcloud.com/user-767555606">Soundcloud</a>
+	<a  class="col-lg-10" target="_blank" href="https://github.com/dapple303">Git hub</a>
 	</span>
-	<span id="social">
-	<h1 id="socialtitle" class="tan">Check me out on</h1>
-	<a target="_blank" href="https://www.instagram.com/daallen303/">Instagram</a>
-	<a target="_blank" href="https://soundcloud.com/user-767555606">Soundcloud</a>
-	<a  target="_blank" href="https://github.com/dapple303">Git hub</a>
-	</span>
+	</div>
+	</div>
 	
 <!--<form id="emailme" action="./sendemail.php" method="POST">
 <h1 id="title" class="important">Email me</h1>
@@ -45,7 +57,6 @@ Contact
 <h1 id="socialtitle" class="tan">Follow me</h1>
 <a id="insta" class="medialink" href="https://www.instagram.com/los_dapple/?hl=en"></a>
 </div>-->
-</body>
 </html>
 <script>
 	transitionto();
@@ -61,16 +72,15 @@ function transitionto()
 		
 		if(i<255)
 		{
-	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
-
-if(i>175)
+			if(i<125)document.getElementById("contact").style.color = "rgb("+i+","+i+","+i+")";
+/*if(i>175)
 { 
 		document.getElementById("contact").style.fontSize = ""+k+"px";
 		k-= .41;
 		//for(y=0;y<x.length;y++)document.getElementsByTagName("input")[y].style.opacity = "1";
 			//document.getElementsByTagName("textarea")[0].style.opacity = "1";
 			//for(l=0;l<document.getElementsByClassName("medialink").length;l++)document.getElementsByClassName("medialink")[l].style.opacity = "1";
-		}
+		}*/
 	}
 	else 
 	{
@@ -92,7 +102,6 @@ function transitionFrom(name)
 	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
 	//for(y=0;y<x.length;y++)document.getElementsByTagName("input")[y].style.backgroundColor = "rgb("+i+","+i+","+i+")";
 	//document.getElementsByTagName("textarea")[0].style.backgroundColor = "rgb("+i+","+i+","+i+")";
-		document.getElementById("contact").style.color = "rgb(0,0,0)";
 		}
 		else 
 		{
