@@ -44,44 +44,42 @@ About me
 	
 
 </body>
-<div id="description1" value="coding" > <span class="piccaption">Coding is my passion <!--There is nothing like sitting around a campfire and looking up at the stars. 
-There will always be times when you need to escape and camping offers me a certain peice of mind that is hard to find anywhere else.-->
+<div id="description1" value="coding" > <span class="piccaption">
 </span></div>
 
-<div id="description2"value="nature" ><span class="piccaption">Nature is my meditation<!--The calm moments of life need to be cherished. To quote the great Ferris Bueler 
-"Life moves pretty fast sometimes, if you don't stop every once in a while you might miss it."--></span></div>
+<div id="description2"value="nature" ><span class="piccaption">I believe the calm moments of life need to be cherished. To quote the great Ferris Bueler 
+"Life moves pretty fast sometimes, if you don't stop every once in a while you might miss it."</span></div>
 
 <div id="description3" value="rock climbing" > 
 	<span class="piccaption">Climbing is my stress relief
-	<!--Climbing has pushed me to do things I would have previously considered crazy.
+	Climbing has pushed me to do things I would have previously considered crazy.
 	It is such a great physical work out, but also such a great test of your mental capabilities. 
-	Each climb is a new puzzle and a new challenge and completing that challenge is a wonderful feeling. --></span>
+	Each climb is a new puzzle and a new challenge and completing that challenge is a wonderful feeling.</span>
 </div>
-<div id="description4"value="test4" ><span class="piccaption">Music is my hobby<!--I've always loved music and have wanted to be able to play guitar. Finally my sophmore year in 
+<div id="description4"value="test4" ><span class="piccaption"> I've always loved music and have wanted to be able to play guitar. Finally my sophmore year in 
 college I bought a guitar and put the hours in to learn it and I haven't looked back since. 
-Learning guitar taught me how rewarding it is to go after my goals and schieve them.--></span> </div>
-<div id="description5"value="test5" > <span class="piccaption">Traveling is my adventure<!--Traveling around with friends and seeing new places is about as good as it gets. --></span> </div> 
-<div id="description6" value="camping" > <span class="piccaption">Camping is my escape <!--There is nothing like sitting around a campfire and looking up at the stars. 
-There will always be times when you need to escape and camping offers me a certain peice of mind that is hard to find anywhere else.-->
+Learning guitar taught me how rewarding it is to go after my goals and schieve them.</span> </div>
+<div id="description5"value="test5" > <span class="piccaption">Traveling around with friends and seeing new places is about as good as it gets.</span> </div> 
+<div id="description6" value="camping" > <span class="piccaption">There is nothing like sitting around a campfire and looking up at the stars. 
+There will always be times when you need to escape and camping offers me a certain peice of mind that is hard to find anywhere else.
 </span></div>
-<div id="description7"value="test7"><span class="piccaption">Colorado is my home<!--I came to Grand Junction for college and it has since become my home. Colorado Mesa University has 
+<div id="description7"value="test7"><span class="piccaption">I came to Grand Junction for college and it has since become my home. Colorado Mesa University has 
 given me so many opportunities that I am forever grateful for and one of those is the opportunity to explore the mountains, waters, and desert 
-of the western slope of Colorado.--> </span></div>
-<div id="description8"value="test8" ><span class="piccaption">Outside is my playground<!--Whether in the winter or summer, I always look to find ways to get out and enjoy life.--></span></div>
+of the western slope of Colorado.</span></div>
+<div id="description8"value="test8" ><span class="piccaption">Whether in the winter or summer, I always look to find ways to get out and enjoy life.</span></div>
 
-	</div><div id="description9"value="test9" class="piccaption"><span class="piccaption">Friends are my backbone<!--The people I surround myself with mean everything to me. Having others around to push you and support you 
-can give you the confidence to achieve great things.--></span></div>
+	</div><div id="description9"value="test9" class="piccaption"><span class="piccaption">My biggest career goal has always been to enjoy my work and I believe that is achieved through good relations 
+with your coworkers, being involved in the company's mission, and having a positive outlook.</span></div>
 <div id="description10" value="basketball">
 	<span class="piccaption">
-		Sports are my first love 
-	<!--Sports have always been a huge part of my life, I've learned so many valuable lessons and made so many
-	great memories. I recently started coaching 
-	 basketball and I love it. I hope to continue coaching and enjoying sports for a very long time.-->
+	Sports have always been a huge part of my life, I've learned so many valuable lessons and made so many
+	great memories. I recently started coaching basketball and I love it. 
+	I hope to continue coaching and enjoying sports for a very long time.
 	 </span>
 </html>
 <script>
 	document.getElementById("aboutme").style.color = "rgb(255,255,255)";
-var imagenum = 1;
+var imagenum = 2;
 document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
 transitionto();
 	
@@ -111,21 +109,6 @@ function transitionto()
 	
 }
 
-
-/*var timer = function(){
-interval = setInterval(function(){ 
-	if(imagenum <=9)imagenum +=1;
-	else imagenum = 1; 
-	document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
-	var slidenumber = "./pictures/slideshow"+imagenum+".jpg";
-    document.getElementById("slideshow").style.backgroundImage = "url('"+slidenumber+"')";
-
-    }, 5000);
-
-};
-timer();
-*/
-
 function transitionFrom(name)
 {
 		document.getElementById("slideshow").style.opacity =0;
@@ -148,7 +131,7 @@ function transitionFrom(name)
 	}, 5);
 }
 $("#left").click( function() {
-	if(imagenum >= 2)imagenum -= 1;
+	if(imagenum > 2)imagenum -= 1;
 	else imagenum = 10;
 	document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
 	var slidenumber = "./pictures/slideshow"+imagenum+".jpg";
@@ -158,7 +141,7 @@ $("#left").click( function() {
 });
 $("#right").click( function() {
 	if(imagenum <= 9)imagenum +=1;
-	else imagenum = 1;
+	else imagenum = 2;
 	 document.getElementById("slideshowtext").innerHTML = document.getElementById("description"+imagenum).innerHTML;
 	var slidenumber = "./pictures/slideshow"+imagenum+".jpg";
     document.getElementById("slideshow").style.backgroundImage = "url('"+slidenumber+"')";
@@ -222,11 +205,5 @@ $("#projects").click( function () {
 	
 });
 
-/*<div id="description6" value="test6" ><span class="piccaption">  <!--My biggest career goal has always been to enjoy my work and I believe that is achieved through good relations 
-with your coworkers, being involved in the company's mission, and having a positive outlook.--></span> </div>
-
-
-
-*/
 
 </script>
