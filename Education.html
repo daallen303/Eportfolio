@@ -63,7 +63,7 @@
 
 
 
-<script>document.getElementById("education").style.color = "rgb(255,255,255)";</script>
+<script>document.getElementById("education").style.color = "rgb(125,125,125)";</script>
 
 <body id="body">
 	<div class="container">
@@ -97,58 +97,9 @@
 
 </html>
 <script>
-	var important = document.getElementsByClassName("maroon");
-	var important2 = document.getElementsByClassName("blue");
-	transitionto();
-
-	function transitionto() {
-
-		var i = 0;
-		var k = 40;
-		var l = 255;
-		var Interval = setInterval(function () {
-			i++;
-			if (i < 255) {
-
-				if (i < 125) {
-					document.getElementById("education").style.color = "rgb(" + i + "," + i + "," + i + ")";
-				}
-				l--;
-				if (i > 225) {
-					//for(j=0; j<important2.length;j++)important2[j].style.color = "rgb("+l+","+l+","+l+")";
-					//for(m=0; m<important.length;m++)important[m].style.color = "rgb("+l+","+l+","+l+")";
-				}
-				document.getElementById("body").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				document.getElementById("educationbody").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				/*if(i>175) 
-				{
-					document.getElementById("education").style.fontSize = ""+k+"px";
-					k-=.5;
-				}*/
-			} else {
-
-				clearInterval(Interval);
-			}
-		}, 5);
-
-	}
+	
 	function transitionFrom(name) {
-		document.getElementById("education").style.color = "rgb(0,0,0)";
-		document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
-		//for(j=0; j<important2.length;j++)important2[j].style.color = "blue";
-		// for(m=0; m<important.length;m++)important[m].style.color = "maroon";
-		var i = 125;
-		var Interval = setInterval(function () {
-			i--;
-			if (i > 0) {
-				document.getElementById("body").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				document.getElementById("educationbody").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-			} else {
-				clearInterval(Interval);
-				if (name == "index") document.location.href = "https://www.daallen.xyz";
-				else document.location.href = "./" + name + ".html";
-			}
-		}, 5);
+		document.location.href = "./" + name + ".html";
 	}
 	$("#aboutme").click(function () {
 		transitionFrom("Aboutme");

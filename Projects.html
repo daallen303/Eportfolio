@@ -1,199 +1,94 @@
 <html>
 <title>
-	Projects
+Projects
 </title>
+<head><link rel="stylesheet" type="text/css" href="./eportfolio.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<head>
-	<link rel="stylesheet" type="text/css" href="./eportfolio.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 
 <div class="container">
 	<div class="row">
-		<div id="mainmenu" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<span id="index" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span
-					class="menubutton">Home</span></span>
-			<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span
-					class="menubutton">Projects</span></span>
-			<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span
-					class="menubutton">Resume</span></span>
-			<span id="education" class="col-lg-2 col-md-2 col-sm-2  float-left "><span
-					class="menubutton">Education</span></span>
-			<span id="aboutme" class="col-lg-2 col-md-2  float-left "><span class="menubutton">About me</span></span>
+	<div id="mainmenu" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<span id="index" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span class="menubutton">Home</span></span>
+			<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span   class="menubutton">Projects</span></span>
+			<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span   class="menubutton">Resume</span></span>
+			<span id="education" class="col-lg-2 col-md-2 col-sm-2  float-left "><span  class="menubutton">Education</span></span>
+			<span id="aboutme" class="col-lg-2 col-md-2  float-left "><span  class="menubutton">About me</span></span>
 			<span id="contact" class="col-lg-2 col-md-2 float-left"><span class="menubutton">Contact</span></span>
 			<span id="dropdown" class="dropdown col-lg-2 col-md-2 col-sm-2 col-xs-3">
-				<button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;"
-					id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<span id="more">More </span><span class="glyphicon glyphicon-chevron-down "></span>
+				<button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span id="more">More </span><span class="glyphicon glyphicon-chevron-down "></span>
 				</button>
-
-
+				
+				
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" id="ddContact" href="./Resume.html">
-						<div id="ddresume" class="col-xs-12">Resume</div>
-					</a>
-					<a class="dropdown-item" id="ddEducation" href="./Education.html">
-						<div id="ddeducation" class="col-xs-12">Education</div>
-					</a>
-					<a class="dropdown-item" id="ddAboutMe" href="./Aboutme.html">
-						<div id="ddaboutme" class="col-xs-12">About me</div>
-					</a>
-					<a class="dropdown-item" id="ddContact" href="./Contact.html">
-						<div id="ddcontact" class="col-xs-12">Contact</div>
-					</a>
-				</div>
-		</div>
-	</div>
-
-
-	<script>document.getElementById("projects").style.color = "rgb(125,125,125)";</script>
-
-	<body id="body">
-		<div id="projectsbody">
-			<h1>Infotunes</h1>
-			<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-				src="https://plot.ly/~daallen303/14.embed" height="525" width="100%"></iframe>
-			<div class="container">
-				<div class="row"><span class="description">
-						<p class="col-lg-6 col-sm-12">I wanted to try my hands at Python and I wanted to pull
-							information from some database and do something cool with that.
-							Since I love music I decided to make it an application that pulls information from Spotify.
-							I found a cool module called Spotipy and used it to collect information on users, artists,
-							albums, playlists, songs etc.
-							Here is a couple examples, one graphing the Beatles albums over time with plotly, and the
-							other an example of graphing the key of songs in the album "Cleopatra" by The Lumineers.</p>
-					</span>
-					<span class="col-lg-6 col-sm-12 col-xs-12"
-						style="height: 500px; background: url(./pictures/infotunes/LumineersSongKey.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
-					</span>
-				</div>
+				<a class="dropdown-item" id="ddContact" href="./Resume.html"><div id="ddresume" class="col-xs-12">Resume</div></a>
+				<a class="dropdown-item" id="ddEducation" href="./Education.html"><div id="ddeducation" class="col-xs-12">Education</div></a>
+				<a class="dropdown-item" id="ddAboutMe" href="./Aboutme.html"><div id="ddaboutme" class="col-xs-12">About me</div></a>
+				<a class="dropdown-item" id="ddContact" href="./Contact.html"><div id="ddcontact" class="col-xs-12">Contact</div></a>
 			</div>
-			<hr>
-			<h1>Online Menu App</h1>
-			<div class="container">
-				<div class="row"><span class="description">
-						<p class="col-lg-6 col-sm-12">This pizza website turned out to be a very interesting project. To
-							order a sub online the same way you
-							order a pizza would either be innefficient or take away from order <span
-								class="tan">customization</span>. The solution was to have two standard templates one
-							for pizza and calzones, and one for Stromboli, Rolls, and salads, and
-							a unique <span class="tan">UI</span> for the subs. All menu items are stored in a <span
-								class="maroon">database</span> which allows the admin to dynamically add, edit, and
-							delete menu items without breaking the code, using easy to fill forms with validation. </p>
-					</span>
-					</span><a class="col-lg-6 col-sm-12 col-xs-12" target="_blank" href="./projects/Diorios/menu.php"
-						style="background: url(./pictures/pizzascreenshot.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;"></a>
-				</div>
-			</div>
-			<hr>
-			<h1>Task Manager</h1>
-			<div class="container">
-				<div class="row"><span class="description">
-						<p class="col-lg-6 col-sm-12">
-							We wanted to create a task manager that was <span class="maroon">unique</span> and we
-							attempted to accomplish that in a few different ways. For one each task and project has a
-							status assigned to it; new, started, or completed. This allows
-							the user to see what needs to be worked on in an effecient and well organized manner. Also
-							assigned to a project/task is a priority, high, medium, or low.
-							The different colors of the task help the user identify the <span
-								class="tan">priority</span> as well as where they are shown on the page (high towards
-							the top, low towards the bottom).
-						</p>
-					</span></span>
-					<a class="col-lg-6 col-sm-12 col-xs-12" target="_blank" href="./projects/Taskr/Login.php"
-						style="background: url(./pictures/taskrscreenshot.jpg); background-size: cover; background-position: center;"></a>
-
-				</div>
-			</div>
-			<hr>
+</div>
+</div>
 
 
-	</body>
+<script>document.getElementById("projects").style.color = "rgb(125,125,125)";</script>
+<body id="body">
+	<div id="projectsbody">
+		<h1>Infotunes</h1>
+		<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daallen303/14.embed" height="525" width="100%"></iframe>
+<div class="container"><div class="row"><span class="description"><p class ="col-lg-6 col-sm-12">I wanted to try my hands at Python and I wanted to pull information from some database and do something cool with that.
+Since I love music I decided to make it an application that pulls information from Spotify. I found a cool module called Spotipy and used it to collect information on users, artists, albums, playlists, songs etc.
+Here is a couple examples, one graphing the Beatles albums over time with plotly, and the other an example of graphing the key of songs in the album "Cleopatra" by The Lumineers.</p></span>
+<span class="col-lg-6 col-sm-12 col-xs-12" style="height: 500px; background: url(./pictures/infotunes/LumineersSongKey.png); background-size: cover; background-repeat: no-repeat; background-position: center;"> </span>
+</div></div><hr>
+<h1>Online Menu App</h1>
+		<div class="container"><div class ="row"><span class="description"><p class="col-lg-6 col-sm-12">This pizza website turned out to be a very interesting project. To order a sub online the same way you 
+order a pizza would either be innefficient or take away from order <span class="tan">customization</span>. The solution was to have two standard templates one for pizza and calzones, and one for Stromboli, Rolls, and salads, and 
+a unique <span class="tan">UI</span> for the subs. All menu items are stored in a <span class="maroon">database</span> which allows the admin to dynamically add, edit, and delete menu items without breaking the code, using easy to fill forms with validation. </p></span>
+</span><a  class="col-lg-6 col-sm-12 col-xs-12" target="_blank" href="./projects/Diorios/menu.php" style="background: url(./pictures/pizzascreenshot.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;"></a>
+	</div></div><hr>
+<h1>Task Manager</h1>
+<div class="container"><div class="row"><span class="description"><p class="col-lg-6 col-sm-12">
+We wanted to create a task manager that was <span class="maroon">unique</span> and we attempted to accomplish that in a few different ways. For one each task and project has a status assigned to it; new, started, or completed. This allows
+the user to see what needs to be worked on in an effecient and well organized manner. Also assigned to a project/task is a priority, high, medium, or low. 
+The different colors of the task help the user identify the <span class="tan">priority</span> as well as where they are shown on the page (high towards the top, low towards the bottom).
+</p></span></span>
+<a  class="col-lg-6 col-sm-12 col-xs-12" target="_blank" href="./projects/Taskr/Login.php" style="background: url(./pictures/taskrscreenshot.jpg); background-size: cover; background-position: center;"></a>
 
+</div></div><hr>
+
+
+</body>
 </html>
 <script>
-	var x = document.getElementsByClassName("screenshot");
-	var y = document.getElementsByClassName("description");
-	var blue = document.getElementsByClassName("blue");
-	var maroon = document.getElementsByClassName("maroon");
-	var alltan = document.getElementsByClassName("tan");
-	transitionto();
-
-	function transitionto() {
-
-		var i = 0;
-		var l = 30;
-		var Interval = setInterval(function () {
-			i++;
-
-			if (i > 225) {
-				for (j = 0; j < blue.length; j++)blue[j].style.color = "rgb(" + l + "," + l + "," + l + ")";
-				for (n = 0; n < maroon.length; n++)maroon[n].style.color = "rgb(" + l + "," + l + "," + l + ")";
-				for (m = 0; m < alltan.length; m++)alltan[m].style.color = "rgb(" + l + "," + l + "," + l + ")";
-				l--;
-			}
-			if (i < 255) {
-				for (k = 0; k < y.length; k++)y[k].style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				document.getElementById("body").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				document.getElementById("projectsbody").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				if (i > 175) for (j = 0; j < x.length; j++)x[j].style.opacity = 1;
-			} else {
-
-				clearInterval(Interval);
-			}
-		}, 5);
-
+function transitionFrom(name) {
+		document.location.href = "./" + name + ".html";
 	}
+$("#aboutme").click( function () {
+	transitionFrom("Aboutme");
+});
+$("#index").click( function () {
+	transitionFrom("index");
+});
 
-	function transitionFrom(name) {
-		document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
-		document.getElementById("projects").style.color = "rgb(0,0,0)";
-		for (j = 0; j < x.length; j++)x[j].style.opacity = 0;
-		var i = 125;
-		var Interval = setInterval(function () {
-			i--;
-			if (i > 0) {
+$("#contact").click( function () {
+	transitionFrom("Contact");
+});
 
-				document.getElementById("body").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				document.getElementById("projectsbody").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				for (k = 0; k < y.length; k++)y[k].style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-			}
-			else {
-				clearInterval(Interval);
-				document.location.href = "./" + name + ".html";
-			}
-		}, 5);
-
-	}
-	$("#aboutme").click(function () {
-		transitionFrom("Aboutme");
-	});
-	$("#index").click(function () {
-		transitionFrom("index");
-	});
-
-	$("#contact").click(function () {
-		transitionFrom("Contact");
-	});
-
-	$("#resume").click(function () {
-		transitionFrom("Resume");
-	});
-	$("#education").click(function () {
-		transitionFrom("Education");
-	});
+$("#resume").click( function () {
+	transitionFrom("Resume");
+});
+$("#education").click( function () {
+	transitionFrom("Education");
+});
 </script>
 <html>
 <!--<span class="description"><p>This pizza website turned out to be a very interesting problem. To order a sub online the same way you 
@@ -213,5 +108,5 @@ To check out waht the site looks like for a <span class="blue">user</span> use <
 Basically the idea was to design a site that sorts tutors, not just by what subject they study but also by their strengths in those subjects.
 Each subject is so broad that a tutor in that field might not be able to fully answer your questions in one specific class. The screenshots to the left show the overall design of the page, very simplistic 
 but appealing to the eyes with the main function of the site front and center. The top view includes the site from an admin point of view with the ability to add departments and tutors dynamically. </p></span>-->
-
 </html>
+

@@ -57,7 +57,7 @@
 		</div>
 	</div>
 
-	<script>document.getElementById("aboutme").style.color = "rgb(255,255,255)";</script>
+	<script>document.getElementById("aboutme").style.color = "rgb(125,125,125)";</script>
 
 	<body id="body">
 		<div class="container">
@@ -120,51 +120,8 @@
 
 </html>
 <script>
-	document.getElementById("aboutme").style.color = "rgb(255,255,255)";
-	var imagenum = 2;
-	document.getElementById("slideshowtext").innerHTML = document.getElementById("description" + imagenum).innerHTML;
-	transitionto();
-
-	function transitionto() {
-		var i = 0;
-		var k = 30;
-		var Interval = setInterval(function () {
-			i++;
-
-			if (i < 255) {
-				if (i < 125) document.getElementById("aboutme").style.color = "rgb(" + i + "," + i + "," + i + ")";
-				document.getElementById("body").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-
-				/*		if(i<175) 
-			{
-				document.getElementById("aboutme").style.fontSize = ""+k+"px";
-				k-=.25;
-			}*/
-			} else {
-				document.getElementById("slideshow").style.opacity = 1;
-				clearInterval(Interval);
-			}
-		}, 5);
-
-	}
-
 	function transitionFrom(name) {
-		document.getElementById("slideshow").style.opacity = 0;
-		document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
-		var i = 125;
-		var newInterval = setInterval(function () {
-			i--;
-			if (i > 0) {
-				document.getElementById("body").style.backgroundColor = "rgb(" + i + "," + i + "," + i + ")";
-				document.getElementById("aboutme").style.color = "rgb(0,0,0)";
-			}
-			else {
-
-				clearInterval(newInterval);
-				document.location.href = "./" + name + ".html";
-
-			}
-		}, 5);
+		document.location.href = "./" + name + ".html";
 	}
 	$("#left").click(function () {
 		if (imagenum > 2) imagenum -= 1;
