@@ -60,6 +60,7 @@ Class Other
 		global $pdo;
 		$stmt = $pdo->prepare("SELECT * FROM other WHERE name=:name");
 		$result = $stmt->execute(array(':name'=>$name));
+		var_dump($stmt->fetch());
 		return $result;
 	}
 	function getPricesByName($name)

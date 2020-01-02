@@ -13,46 +13,51 @@ Education
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
+
 <div class="container">
 	<div class="row">
-<div id="mainmenu" class="col-lg-12">
-<span class="col-lg-2"><span id="home" class="menubutton">Home</span></span>
-<span class="col-lg-2"><span id="education" class="menubutton">Education</span></span>
-<span class="col-lg-2"><span id="aboutme" class="menubutton">About me</span></span>
-<span class="col-lg-2"><span id="contact" class="menubutton">Contact</span></span>
-<span class="col-lg-2"><span  id="resume" class="menubutton">Resume</span></span>
-<span class="col-lg-2"><span  id="projects" class="menubutton">Projects</span></span>
+<div id="mainmenu" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<span id="home" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span class="menubutton">Home</span></span>
+<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span   class="menubutton">Projects</span></span>
+<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span   class="menubutton">Resume</span></span>
+<span id="education" class="col-lg-2 col-md-2 col-sm-2  float-left "><span  class="menubutton">Education</span></span>
+<span id="aboutme" class="col-lg-2 col-md-2  float-left "><span  class="menubutton">About me</span></span>
+<span id="contact" class="col-lg-2 col-md-2 float-left"><span class="menubutton">Contact</span></span>
+<span class="dropdown col-lg-2 col-md-2 col-sm-2 col-xs-3">
+  <button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span id="more">More </span><span class="glyphicon glyphicon-chevron-down "></span>
+  </button>
+  
+  
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="ddContact" href="./Resume.html"><div id="ddresume" class="col-xs-12">Resume</div></a>
+    <a class="dropdown-item" id="ddEducation" href="./Education.html"><div id="ddeducation" class="col-xs-12">Education</div></a>
+    <a class="dropdown-item" id="ddAboutMe" href="./Aboutme.html"><div id="ddaboutme" class="col-xs-12">About me</div></a>
+    <a class="dropdown-item" id="ddContact" href="./Contact.html"><div id="ddcontact" class="col-xs-12">Contact</div></a>
+</div>
+</span>
+</div>
+
+
 </div>
 </div>
-</div>
+
+
 
 <script>document.getElementById("education").style.color = "rgb(255,255,255)";</script>
 <body id="body">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-10 mx-auto">
+			<div id="educationbody">
 <span id="scroll"></span>
 <span id="educationbody">
 
 <h1 class="headertan">Studies</h1>
 <br>
 <p>
-I graduated from Wheat Ridge high school in 2013 and went on to <span class="blue">Colorado Mesa University</span> where I graduated with a Bachelor of Science in Computer Science and a minor in <span class="maroon">Mathematics</span>. 
-I was undecided going into my freshman year and after an intro to web developement course I got hooked on coding and have been 
-studying various languages ever since. I have always enjoyed finding solutions to math problems
- and I think the problem soving involved in coding has been what keeps my interest. I also love the ability to be
- creative and artistic in a way that uses skills typically seen as more analog.
- <br></p>
- <p>My favorite classes while attending Mesa were Calculus 2, <span class="blue">Web Design 3</span>, Java, Software Engineering, Mythology, Art History, and robotics.</p>
- <h1 class="headergrey">Awards and extra curriculars</h1>
- <p>During my years at Colorado Mesa I prided myself on being a good student, making my way onto the <span class="maroon">Dean's list</span> and becoming a member of the Nationional Society of Leadership and Success,
- and Upsilon Pi Epsilon honor society. I also wrote four articles for Horizon magazine (the schools semi annual magazine) in the 2015 winter and 2016 spring editions on various topics.
- I enjoyed participating in intramnural athletics including ultimate frisbee, basketball, soccer, and flag football and tried to make it to as many campus events as possible, especially when free food or music was invlolved.</p> 
- 
- <h5 class="mb-5">test</p>
- <h5 class="p-2">test</p>
-
- 
+In May of 2018 I graduated from <a href="https://www.coloradomesa.edu/">Colorado Mesa University</a> with a Bachelor of Science in Computer Science and a minor in Mathematics. During my years at Colorado Mesa I prided myself on being a good student, making my way onto the Dean's list and becoming a member of <a href="http://upe.acm.org/">Upsilon Pi Epsilon honor society</a> and the <a href="https://www.nsls.org/">Nationional Society of Leadership and Success</a>. I also wrote four articles for Horizon magazine (the schools semi annual magazine) in the 2015 winter and 2016 spring editions on various topics. 
+I have a strong background in Object Oriented Programming with experience in PHP, Javascript, Meteor, Laravel, Bootstrap, Mongo, SQL, Java, C++, Visual Basic. My favorite projects are ones that challenge me and require me to learn something new and useful. </p>
+ <p>My favorite classes while attending Mesa were Calculus 2, Web Design 3, Java, Software Engineering, Mythology, Art History, and robotics.</p>
  
 
  
@@ -84,8 +89,8 @@ function transitionto()
 			l--;
 			if(i>225)
 			{
-			 for(j=0; j<important2.length;j++)important2[j].style.color = "rgb("+l+","+l+","+l+")";
-			 for(m=0; m<important.length;m++)important[m].style.color = "rgb("+l+","+l+","+l+")";
+			 //for(j=0; j<important2.length;j++)important2[j].style.color = "rgb("+l+","+l+","+l+")";
+			 //for(m=0; m<important.length;m++)important[m].style.color = "rgb("+l+","+l+","+l+")";
 		 }
 	document.getElementById("body").style.backgroundColor = "rgb("+i+","+i+","+i+")";
 	document.getElementById("educationbody").style.backgroundColor = "rgb("+i+","+i+","+i+")";
@@ -103,9 +108,10 @@ function transitionto()
 	
 }
 function transitionFrom(name){
+	document.getElementById("education").style.color = "rgb(0,0,0)";
 	document.getElementById(name.toLowerCase()).style.color = "rgb(255,255,255)";
-		for(j=0; j<important2.length;j++)important2[j].style.color = "blue";
-			 for(m=0; m<important.length;m++)important[m].style.color = "maroon";
+		//for(j=0; j<important2.length;j++)important2[j].style.color = "blue";
+			// for(m=0; m<important.length;m++)important[m].style.color = "maroon";
 	var i=125;
 	var Interval = setInterval( function () {
 		i--;
@@ -116,7 +122,8 @@ function transitionFrom(name){
 		}else 
 		{
 			clearInterval(Interval);
-			document.location.href = "./"+name+".html";
+			if(name == "Home") document.location.href = "https://www.daallen.xyz";
+			else document.location.href = "./"+name+".html";
 		}
 	}, 5);
 }
@@ -139,4 +146,45 @@ $("#projects").click( function () {
 		transitionFrom("Projects");
 	
 });
+$("#projects").mouseover( function () {
+		document.getElementById("projects").style.color = "blue";
+	
+});
+$("#projects").mouseout( function () {
+		document.getElementById("projects").style.color = "black";
+	
+});
+$("#resume").mouseover( function () {
+		document.getElementById("resume").style.color = "blue";
+	
+});
+$("#resume").mouseout( function () {
+		document.getElementById("resume").style.color = "black";
+	
+});
+$("#aboutme").mouseover( function () {
+		document.getElementById("aboutme").style.color = "blue";
+	
+});
+$("#aboutme").mouseout( function () {
+		document.getElementById("aboutme").style.color = "black";
+	
+});
+$("#home").mouseover( function () {
+		document.getElementById("home").style.color = "blue";
+	
+});
+$("#home").mouseout( function () {
+		document.getElementById("home").style.color = "black";
+	
+});
+$("#contact").mouseover( function () {
+		document.getElementById("contact").style.color = "blue";
+	
+});
+$("#contact").mouseout( function () {
+		document.getElementById("contact").style.color = "black";
+	
+});
+
 </script>

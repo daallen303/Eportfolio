@@ -17,6 +17,7 @@ class Task
 	global $pdo;
 	$stmt = $pdo->prepare("INSERT INTO tasks (`id`, `name`, `description`, `priority`,`status`, `username`, `project`) VALUES(:id,:name,:description,:priority, :status, :username, :project)");
 	$result = $stmt->execute(array(':id'=>$id, ':name'=>$name, ':description'=>$description, ':priority'=>$priority, ':status'=>$status, ':username'=>$username, ':project'=>$project));
+	echo "result: $result\n";
 	return $result;
 }
 function getallTasks(){

@@ -1,4 +1,5 @@
 <?php
+
 require("Config.php");
 require("User.class.php");
 if(!empty($_POST))

@@ -18,6 +18,7 @@ Class Calzone
 		global $pdo;
 		$stmt = $pdo->prepare("INSERT INTO calzones (`id`, `name`, `prices`, `pricesl`, `description`, `toppings`) VALUES(:id, :name, :prices, :pricesl, :description, :toppings)");
 		$result = $stmt->execute(array(':id'=>$id,':name'=>$name, ':prices'=>$prices, ':pricem'=>$pricem, ':pricel'=>$pricel, ':pricesl'=>$pricesl, ':description'=>$description, ':toppings' =>$toppings));
+		echo "result: $result\n";
 		return $result;
 	}
 	function updateCalzone($id, $name, $prices, $pricel, $description, $toppings)
@@ -25,6 +26,7 @@ Class Calzone
 		global $pdo;
 		$stmt = $pdo->prepare("UPDATE `calzones` SET `name`=:name, `prices`=:prices, `pricel`=:pricel, `description`=:description, `toppings`=:toppings WHERE `calzones`.`id` =:id");
 		$result = $stmt->execute(array(':id'=>$id,':name'=>$name, ':prices'=>$prices, ':pricel'=>$pricel, ':description'=>$description, ':toppings'=>$toppings));
+		echo "result: $result\n";
 		return $result;
 	}
 	function getToppingsByName($name)

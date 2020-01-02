@@ -34,6 +34,7 @@ class Project{
 	global $pdo;
 	$stmt = $pdo->prepare("INSERT INTO projects (`id`, `name`, `description`, `priority`,`status`, `username`) VALUES(:id,:name,:description,:priority, :status, :username)");
 	$result = $stmt->execute(array(':id'=>$id, ':name'=>$name, ':description'=>$description, ':priority'=>$priority, ':status'=>$status, ':username'=>$username));
+	echo "result: $result\n";
 	return $result;
 }
 function getallProjects(){

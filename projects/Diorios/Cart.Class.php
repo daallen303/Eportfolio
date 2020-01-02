@@ -15,9 +15,11 @@ class Cart
     }
     
     function addQuanity($quanity) {
+		echo($quanity);
 		array_push($_SESSION["cart"]["quanity"],$quanity);
 	}
 	function addPrice($price) {
+		echo($price);
 		array_push($_SESSION["cart"]["prices"],$price);
 	}
 	function addName($name) {
