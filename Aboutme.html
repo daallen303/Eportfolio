@@ -16,14 +16,25 @@ About me
 
 <div class="container">
 	<div class="row">
-<div id="mainmenu" class="col-lg-12">
-<span class="col-lg-2"><span id="home" class="menubutton">Home</span></span>
-<span class="col-lg-2"><span id="education" class="menubutton">Education</span></span>
-<span class="col-lg-2"><span id="aboutme" class="menubutton">About me</span></span>
-<span class="col-lg-2"><span id="contact" class="menubutton">Contact</span></span>
-<span class="col-lg-2"><span  id="resume" class="menubutton">Resume</span></span>
-<span class="col-lg-2"><span  id="projects" class="menubutton">Projects</span></span>
-</div>
+	<div id="mainmenu" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<span id="index" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span class="menubutton">Home</span></span>
+			<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span   class="menubutton">Projects</span></span>
+			<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span   class="menubutton">Resume</span></span>
+			<span id="education" class="col-lg-2 col-md-2 col-sm-2  float-left "><span  class="menubutton">Education</span></span>
+			<span id="aboutme" class="col-lg-2 col-md-2  float-left "><span  class="menubutton">About me</span></span>
+			<span id="contact" class="col-lg-2 col-md-2 float-left"><span class="menubutton">Contact</span></span>
+			<span id="dropdown" class="dropdown col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span id="more">More </span><span class="glyphicon glyphicon-chevron-down "></span>
+				</button>
+				
+				
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" id="ddContact" href="./Resume.html"><div id="ddresume" class="col-xs-12">Resume</div></a>
+				<a class="dropdown-item" id="ddEducation" href="./Education.html"><div id="ddeducation" class="col-xs-12">Education</div></a>
+				<a class="dropdown-item" id="ddAboutMe" href="./Aboutme.html"><div id="ddaboutme" class="col-xs-12">About me</div></a>
+				<a class="dropdown-item" id="ddContact" href="./Contact.html"><div id="ddcontact" class="col-xs-12">Contact</div></a>
+			</div>
 </div>
 </div>
 
@@ -186,7 +197,7 @@ $("#right").mouseout( function () {
 });
 
 $("#home").click( function () {
-transitionFrom("Home");
+transitionFrom("index");
 });
 
 $("#contact").click( function () {

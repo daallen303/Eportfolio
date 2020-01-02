@@ -16,25 +16,25 @@ Education
 
 <div class="container">
 	<div class="row">
-<div id="mainmenu" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<span id="home" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span class="menubutton">Home</span></span>
-<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span   class="menubutton">Projects</span></span>
-<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span   class="menubutton">Resume</span></span>
-<span id="education" class="col-lg-2 col-md-2 col-sm-2  float-left "><span  class="menubutton">Education</span></span>
-<span id="aboutme" class="col-lg-2 col-md-2  float-left "><span  class="menubutton">About me</span></span>
-<span id="contact" class="col-lg-2 col-md-2 float-left"><span class="menubutton">Contact</span></span>
-<span class="dropdown col-lg-2 col-md-2 col-sm-2 col-xs-3">
-  <button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span id="more">More </span><span class="glyphicon glyphicon-chevron-down "></span>
-  </button>
-  
-  
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="ddContact" href="./Resume.html"><div id="ddresume" class="col-xs-12">Resume</div></a>
-    <a class="dropdown-item" id="ddEducation" href="./Education.html"><div id="ddeducation" class="col-xs-12">Education</div></a>
-    <a class="dropdown-item" id="ddAboutMe" href="./Aboutme.html"><div id="ddaboutme" class="col-xs-12">About me</div></a>
-    <a class="dropdown-item" id="ddContact" href="./Contact.html"><div id="ddcontact" class="col-xs-12">Contact</div></a>
-</div>
+	<div id="mainmenu" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<span id="index" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span class="menubutton">Home</span></span>
+		<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span   class="menubutton">Projects</span></span>
+		<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span   class="menubutton">Resume</span></span>
+		<span id="education" class="col-lg-2 col-md-2 col-sm-2  float-left "><span  class="menubutton">Education</span></span>
+		<span id="aboutme" class="col-lg-2 col-md-2  float-left "><span  class="menubutton">About me</span></span>
+		<span id="contact" class="col-lg-2 col-md-2 float-left"><span class="menubutton">Contact</span></span>
+		<span id="dropdown" class="dropdown col-lg-2 col-md-2 col-sm-2 col-xs-3">
+			<button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span id="more">More </span><span class="glyphicon glyphicon-chevron-down "></span>
+			</button>
+			
+			
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" id="ddContact" href="./Resume.html"><div id="ddresume" class="col-xs-12">Resume</div></a>
+			<a class="dropdown-item" id="ddEducation" href="./Education.html"><div id="ddeducation" class="col-xs-12">Education</div></a>
+			<a class="dropdown-item" id="ddAboutMe" href="./Aboutme.html"><div id="ddaboutme" class="col-xs-12">About me</div></a>
+			<a class="dropdown-item" id="ddContact" href="./Contact.html"><div id="ddcontact" class="col-xs-12">Contact</div></a>
+		</div>
 </span>
 </div>
 
@@ -122,7 +122,7 @@ function transitionFrom(name){
 		}else 
 		{
 			clearInterval(Interval);
-			if(name == "Home") document.location.href = "https://www.daallen.xyz";
+			if(name == "index") document.location.href = "https://www.daallen.xyz";
 			else document.location.href = "./"+name+".html";
 		}
 	}, 5);
@@ -131,8 +131,8 @@ $("#aboutme").click( function () {
 	transitionFrom("Aboutme");
 	
 });
-$("#home").click( function () {
-			transitionFrom("Home");
+$("#index").click( function () {
+			transitionFrom("index");
 });
 
 $("#contact").click( function () {
@@ -170,12 +170,12 @@ $("#aboutme").mouseout( function () {
 		document.getElementById("aboutme").style.color = "black";
 	
 });
-$("#home").mouseover( function () {
-		document.getElementById("home").style.color = "blue";
+$("#index").mouseover( function () {
+		document.getElementById("index").style.color = "blue";
 	
 });
-$("#home").mouseout( function () {
-		document.getElementById("home").style.color = "black";
+$("#index").mouseout( function () {
+		document.getElementById("index").style.color = "black";
 	
 });
 $("#contact").mouseover( function () {
