@@ -11,18 +11,6 @@
   #contact {
     display: none;
   }
-  #ddaboutme {
-    display: block;
-  }
-  #aboutme {
-    display: none;
-  }
-  #ddeducation {
-    display: block;
-  }
-  #education {
-    display: none;
-  }
   #ddresume {
     display: block;
   }
@@ -55,18 +43,6 @@
     display: block;
   }
   #contact {
-    display: none;
-  }
-  #ddaboutme {
-    display: block;
-  }
-  #aboutme {
-    display: none;
-  }
-  #ddeducation {
-    display: block;
-  }
-  #education {
     display: none;
   }
   .date {
@@ -109,132 +85,37 @@
   #contact {
     display: inline;
   }
-  #aboutme {
-    display: inline;
-  }
-  #education {
-    display: inline;
-  }
-  .slidecontainer {
-    width: 100%;
-    /* Width of the outside container */
-    position: absolute;
-    top: 400px;
-  }
-  #slideshow {
-    width: 1000px;
-    height: 500px;
-    background-image: url(./pictures/slideshow2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    position: relative;
-    margin-top: 40px;
-  }
-  #slideshowtext {
-    font-family: "Times New Roman", Times, serif;
-    display: block;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 500px;
-    width: 300;
-    text-align: center;
-    font-size: 35px;
-  }
 }
-
-#mainmenu {
+#profile-picture
+{
+  background: url('./pictures/me.jpg');
   float: left;
+  height: 300px;
+  width: 30%;
+}
+#mainmenu {
+  width: 100%;
   position: absolute;
   top: 0px;
+  left: 0px;
   margin-top: 0px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-/*#education:hover
-  {
-  font-size: 40px;
-  color: blue;
-  }
-  #projects:hover
-  {
-    font-size: 40px;
-    color: grey;
-  }
-  
-  #home:hover
-  {
-    color: tan;
   font-size: 20px;
-  }
-  #resume:hover
-  {
-  font-size: 30px;
-  color: maroon;
-  }
-  #aboutme:hover
-  {
-  font-size: 30px;
-  color: orange;
-  }
-  #contact:hover
-  {
-  color: green;
-    font-size: 25px;
-  }
-  */
+  height: 60px;
+  padding-top: 15px;
+  padding-bottom: 10x;
+  background-color: black;
+  color: white;
+}
 
 .menubutton {
   height: 30px;
 }
-
 .menubutton:hover {
-  color: blue;
-}
-
-.maroon {
-  color: maroon;
-}
-
-.blue {
-  color: blue;
-}
-
-.tan {
-  color: tan;
-}
-
-.mainmenu a:visited {
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.mainmenu a:hover {
-  font-family: "Times New Roman", Times, serif;
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: tan;
-}
-
-.mainmenu a:active {
-  font-family: "Times New Roman", Times, serif;
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: tan;
+  color: #d2b48c;
 }
 
 hr {
@@ -251,61 +132,64 @@ li {
   height: 10px;
   text-align: center;
 }
-
-#body {
-  margin-top: 40px;
-}
-
 #mainbody {
-  margin-top: 20%;
+  margin-top: 70px; 
+  width: 60%;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  color: black;
+  background-color: white;
+  padding: 20px;
+}
+hr
+{
+  color: black;
 }
 
-/*
-  #mainbody
-  {
-  font-family: "Times New Roman", Times, serif;
-  background-color:rgb(0,0,0);
-  width: 80%;
-  
-  height: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 30px;
-  
-  }
-  */
-
-#slideshow {
-  opacity: 0;
-  transition: .8s ease-in-out;
-  height: 500px;
-  background-image: url(./pictures/slideshow2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
+#body
+{
+  min-height: max-content;
   position: relative;
-  margin-top: 40px;
 }
 
-#slideshowtext {
-  font-family: "Times New Roman", Times, serif;
-  display: block;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
+iframe
+{
+  margin-bottom: 20px;
+}
+
+#name
+{
   position: absolute;
   top: 0px;
-  left: 0px;
-  height: 500px;
-  width: 300;
-  text-align: center;
-  font-size: 35px;
+  right: 0px;
+  font-size: 40px;
+  height:40px;
+  float: right;
+  color: white;
 }
-
+#footer
+{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin-top: 10px;
+}
+img
+{
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
 .piccaption {
   text-align: center;
   width: 300px;
@@ -316,49 +200,15 @@ li {
   line-height: 2;
   font-size: large;
 }
-
-#left {
-  width: 50;
-  height: 50px;
-  background-image: url(./pictures/left.png);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-size: cover;
-  position: fixed;
-  top: 250px;
-  left: 20px;
-  z-index: 2;
-}
-
-#right {
-  width: 50;
-  height: 50px;
-  background-image: url(./pictures/right.png);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  background-size: cover;
-  position: fixed;
-  top: 250px;
-  right: 20px;
-  z-index: 2;
-}
-
 #projectsbody a {
   display: block;
   float: left;
   height: 400px;
 }
 
-#projectsbody h1 {
+h1{
   text-align: center;
   width: 100%;
-  color: tan;
 }
 
 #projectsbody {
@@ -392,136 +242,6 @@ p {
   margin-left: 20px;
 }
 
-/*
-  .screenshot
-  {
-    width: 100%;
-    float: left;
-    margin-bottom: 15px;
-    opacity: 0;
-    transition: .8s;
-  }*/
-
-.headergrey {
-  font-family: "Times New Roman", Times, serif;
-  color: grey;
-  font-size: 35px;
-  font-style: bold;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  float: right;
-  height: 30px;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.headermaroon {
-  font-family: "Times New Roman", Times, serif;
-  color: maroon;
-  font-size: 35px;
-  font-style: bold;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  float: right;
-  height: 22px;
-  width: 100%;
-}
-
-.headertan {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 35px;
-  color: tan;
-  font-style: bold;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  float: right;
-  height: 30px;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-#emailme {
-  font-family: "Times New Roman", Times, serif;
-  float: left;
-  margin-top: 80px;
-  margin-left: 40px;
-  width: 380px;
-}
-
-#title {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  padding-left: 80px;
-  font-size: 40;
-}
-
-input[type=text] {
-  font-family: "Times New Roman", Times, serif;
-  border-width: 2px;
-  border-color: grey;
-  border-style: solid;
-  width: 300px;
-  height: 30px;
-  margin-bottom: 5px;
-  background-Color: white;
-  opacity: 0;
-}
-
-input[type=submit] {
-  font-family: "Times New Roman", Times, serif;
-  width: 150px;
-  height: 30px;
-  margin-left: 228px;
-  margin-top: 5px;
-  background-color: white;
-  border-style: groove;
-  font-size: 20px;
-  opacity: 0;
-}
-
-input[type=submit]:hover {
-  font-family: "Times New Roman", Times, serif;
-  width: 150px;
-  height: 30px;
-  margin-left: 228px;
-  margin-top: 5px;
-  background-color: white;
-  border-style: groove;
-  color: black;
-  font-size: 20px;
-}
-
-textarea {
-  font-family: "Times New Roman", Times, serif;
-  width: 300px;
-  resize: none;
-  background-Color: white;
-  border-color: grey;
-  opacity: 0;
-  border-width: 2px;
-  border-color: grey;
-  border-style: solid;
-}
-
-th {
-  font-family: "Times New Roman", Times, serif;
-  text-align: left;
-  width: 80px;
-}
-
-#insta {
-  font-family: "Times New Roman", Times, serif;
-  background-image: url(./pictures/instagram.png);
-  height: 64px;
-  width: 65px;
-  display: block;
-  float: left;
-  margin-left: 30px;
-}
-
 #projectlink {
   font-family: "Times New Roman", Times, serif;
   color: blue;
@@ -530,152 +250,4 @@ th {
 #projectlink:hover {
   font-family: "Times New Roman", Times, serif;
   color: tan;
-}
-
-#airplane {
-  margin-top: 70px;
-  margin-left: 40px;
-  float: left;
-}
-
-.important {
-  font-family: "Times New Roman", Times, serif;
-  color: grey;
-}
-
-.important2 {
-  font-family: "Times New Roman", Times, serif;
-  color: white;
-}
-
-#java {
-  font-family: "Times New Roman", Times, serif;
-  color: maroon;
-  font-style: italic;
-}
-
-#cpp {
-  font-family: "Times New Roman", Times, serif;
-  color: blue;
-  font-style: italic;
-}
-
-#visualbasic {
-  font-family: "Times New Roman", Times, serif;
-  color: tan;
-  font-style: italic;
-}
-
-#description1 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description2 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description3 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description4 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description5 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description6 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description7 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description8 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description9 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#description10 {
-  font-family: "Times New Roman", Times, serif;
-  display: none;
-}
-
-#educationbody {
-  font-family: "Times New Roman", Times, serif;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 20px;
-  margin-top: 100px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-#educationbody p {
-  font-family: "Times New Roman", Times, serif;
-  line-height: 2;
-  text-indent: 50px;
-  font-family: sans-serif;
-}
-
-#scroll {
-  display: none;
-}
-
-#resume {
-  font-size: 30px;
-}
-
-.address {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-}
-
-.descriptionresume {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.headerCV {
-  text-align: center;
-  width: 100%;
-}
-
-.date {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.name {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-}
-
-#contactinfo {
-  font-family: "Times New Roman", Times, serif;
-  width: 80%;
-  font-size: 40px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  margin-top: 100px;
-  margin-left: 60px;
-}
-
-#contactinfo a {
-  color: blue;
 }
