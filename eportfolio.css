@@ -1,98 +1,3 @@
-@media only screen and (max-width: 576px) {
-  #dropdown {
-    display: inline;
-  }
-  #ddresume {
-    display: none;
-  }
-  #ddcontact {
-    display: block;
-  }
-  #contact {
-    display: none;
-  }
-  #ddresume {
-    display: block;
-  }
-  #resume {
-    display: none;
-  }
-  .description {
-    font-family: "Times New Roman", Times, serif;
-    display: block;
-    color: black;
-    background-color: black;
-    text-align: left;
-    font-size: 12px;
-    line-height: 2;
-  }
-  .date {
-    float: left;
-    text-align: left;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  #dropdown {
-    display: inline;
-  }
-  #ddresume {
-    display: none;
-  }
-  #ddcontact {
-    display: block;
-  }
-  #contact {
-    display: none;
-  }
-  .date {
-    float: left;
-    text-align: right;
-  }
-  .description {
-    font-family: "Times New Roman", Times, serif;
-    display: block;
-    color: black;
-    background-color: black;
-    text-align: left;
-    font-size: 14px;
-    line-height: 2;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .description {
-    font-family: "Times New Roman", Times, serif;
-    display: block;
-    color: black;
-    background-color: black;
-    text-align: left;
-    font-size: 18px;
-    line-height: 2;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  #dropdown {
-    display: none;
-  }
-  #ddresume {
-    display: none;
-  }
-  #resume {
-    display: inline;
-  }
-  #contact {
-    display: inline;
-  }
-}
-#profile-picture
-{
-  background: url('./pictures/me.jpg');
-  float: left;
-  height: 300px;
-  width: 30%;
-}
 #mainmenu {
   width: 100%;
   position: absolute;
@@ -111,9 +16,16 @@
   color: white;
 }
 
+#profile-picture {
+  float: left;
+  height: 400px;
+  width: 335;
+}
+
 .menubutton {
   height: 30px;
 }
+
 .menubutton:hover {
   color: #d2b48c;
 }
@@ -123,18 +35,8 @@ hr {
   width: 100%;
 }
 
-li {
-  font-family: "Times New Roman", Times, serif;
-  list-style-type: none;
-  float: left;
-  margin-right: 120px;
-  margin-top: 0px;
-  height: 10px;
-  text-align: center;
-}
 #mainbody {
-  margin-top: 70px; 
-  width: 60%;
+  margin-top: 60px;
   font-size: 16px;
   display: block;
   margin-left: auto;
@@ -144,34 +46,39 @@ li {
   background-color: white;
   padding: 20px;
 }
-hr
-{
+
+#mainbody a {
+  font-size: 20px;
+  text-decoration: underline;
   color: black;
 }
 
-#body
-{
-  min-height: max-content;
-  position: relative;
+hr {
+  color: black;
 }
 
-iframe
-{
+#body {
+  min-height: max-content;
+  position: relative;
+  background-color: lightgray;
+}
+
+iframe {
   margin-bottom: 20px;
 }
 
-#name
-{
+#name {
   position: absolute;
   top: 0px;
   right: 0px;
   font-size: 40px;
-  height:40px;
+  height: 40px;
   float: right;
   color: white;
+  text-decoration: none;
 }
-#footer
-{
+
+#footer {
   background-color: black;
   color: white;
   font-size: 20px;
@@ -179,17 +86,17 @@ iframe
   text-align: center;
   height: 40px;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   left: 0px;
   margin-top: 10px;
 }
-img
-{
+
+img {
   float: left;
   padding-right: 20px;
-  padding-bottom: 20px;
 }
+
 .piccaption {
   text-align: center;
   width: 300px;
@@ -200,27 +107,16 @@ img
   line-height: 2;
   font-size: large;
 }
-#projectsbody a {
+
+.projectimage a {
   display: block;
   float: left;
   height: 400px;
 }
 
-h1{
-  text-align: center;
+#mainbody h1 {
+  text-align: left;
   width: 100%;
-}
-
-#projectsbody {
-  font-family: "Times New Roman", Times, serif;
-  position: absolute;
-  top: 45px;
-  width: 80%;
-  right: 0px;
-  left: 0px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .project {
@@ -239,7 +135,7 @@ h1{
 
 p {
   font-family: "Times New Roman", Times, serif;
-  margin-left: 20px;
+  font-size: 20px;
 }
 
 #projectlink {
@@ -250,4 +146,74 @@ p {
 #projectlink:hover {
   font-family: "Times New Roman", Times, serif;
   color: tan;
+}
+
+i {
+  margin-right: 5px;
+}
+
+#dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  #name {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mainmenu {
+    display: none;
+  }
+  #dropdown {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    height: 60px;
+    padding-top: 15px;
+    padding-bottom: 10x;
+    background-color: black;
+    color: black;
+  }
+  .dropdown-item {
+    height: 40px;
+    font-size: 40px;
+    width: 25%;
+    color: black
+  }
+  .dropdown-item div
+  {
+    background-color: lightgray;
+  }
+  #dropdownMenuButton {
+    height: 40px;
+    background-color: lightgray;
+  }
+  .description {
+    font-family: "Times New Roman", Times, serif;
+    display: block;
+    color: black;
+    background-color: black;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2;
+  }
+  #profile-picture
+{
+  float: left;
+  height: 200px;
+  width: 168;
+}
+#mainbody p
+{
+  font-size: 12px;
+}
 }
