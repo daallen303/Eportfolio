@@ -16,6 +16,11 @@
   color: white;
 }
 
+#mainmenu span
+{
+  float: right;
+}
+
 #profile-picture {
   float: left;
   height: 400px;
@@ -68,12 +73,11 @@ iframe {
 }
 
 #name {
+  font-size: 40px;
+  height: 60px;
   position: absolute;
   top: 0px;
-  right: 0px;
-  font-size: 40px;
-  height: 40px;
-  float: right;
+  left:0px;
   color: white;
   text-decoration: none;
 }
@@ -152,7 +156,7 @@ i {
   margin-right: 5px;
 }
 
-#dropdown {
+#topnav {
   display: none;
 }
 
@@ -163,57 +167,85 @@ i {
 }
 
 @media only screen and (max-width: 768px) {
+  #mainbody
+  {
+    margin-top: 0px;
+  }
   #mainmenu {
     display: none;
   }
-  #dropdown {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-top: 0px;
+  #topnav {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    height: 60px;
-    padding-top: 15px;
-    padding-bottom: 10x;
     background-color: black;
-    color: black;
+    height: 60px;
+    color: white;
+    padding: 0px;
+    font-size: 20px;
   }
-  .dropdown-item {
-    height: 40px;
-    font-size: 40px;
-    width: 25%;
-    color: black
+  #topnav #namelink {
+   position: absolute;
+   color: white;
+   text-decoration: none;
+   top: 15px;
+   left: 10px;
   }
-  .dropdown-item div
-  {
+  #navbutton {
     background-color: lightgray;
+    float: right;
+    height: 60px;
+    padding-top: 20px;
+  }
+  #mylinks {
+    display: block;
+    position: absolute;
+    top: 60px;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    padding-left: 0px;
+    opacity: 0;
+    z-index: 1;
+    padding-right: 0px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  #mylinks div a
+  {
+    color: white;
+  }
+  #mylinks div
+  {
+    height: 40px;
+    padding-top: 5px;
+  }
+  #mylinks div:hover
+  {
+    background-color: white;
+  }
+  #mylinks div:hover a
+  {
+    color: black;
   }
   #dropdownMenuButton {
     height: 40px;
     background-color: lightgray;
+    position: sticky;
   }
   .description {
     font-family: "Times New Roman", Times, serif;
     display: block;
     color: black;
-    background-color: black;
     text-align: left;
     font-size: 14px;
     line-height: 2;
   }
-  #profile-picture
-{
-  float: left;
-  height: 200px;
-  width: 168;
-}
-#mainbody p
-{
-  font-size: 12px;
-}
+  #profile-picture {
+    float: left;
+    height: 200px;
+    width: 168;
+  }
+  #mainbody p {
+    font-size: 12px;
+  }
 }

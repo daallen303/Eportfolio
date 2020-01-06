@@ -20,117 +20,105 @@
 		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 		crossorigin="anonymous"></script>
 
+	<script src="https://kit.fontawesome.com/be0d32f615.js" crossorigin="anonymous"></script>
 </head>
 
 <div id="body">
-		<div class="container">
-				<div class="row">
-					<div id="mainmenu" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-						<span id="index" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span
-								class="menubutton">Home</span></span>
-						<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span
-								class="menubutton">Projects</span></span>
-						<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span
-								class="menubutton">Resume</span></span>
-						<span id="contact" class="col-lg-2 col-md-2 float-left"><span class="menubutton">Contact</span></span>
-		
-						<a id="name" class="col-lg-3 col-md-3 col-sm-3 col-xs-3" href="./index.html">Daniel Allen</a>
-					</div>
-				</div>
-		
-				<div class="row">
-					<div id="dropdown" class="dropdown col-lg-12">
-						<button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;"
-							id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Menu <span class="glyphicon glyphicon-chevron-down "></span>
-						</button>
-		
-		
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" id="ddHome" href="./">
-								<div id="ddhome" class="col-lg-12">Home</div>
-							</a>
-							<a class="dropdown-item" id="ddProjects" href="./Projects.html">
-								<div id="ddprojects" class="col-lg-12">Projects</div>
-							</a>
-							<a class="dropdown-item" id="ddResume" href="./Resume.html">
-								<div id="ddresume" class="col-lg-12">Resume</div>
-							</a>
-							<a class="dropdown-item" id="ddContact" href="./Contact.html">
-								<div id="ddcontact" class="col-lg-12">Contact</div>
-							</a>
-						</div>
-					</div>
-				</div>
-		
+	<div class="container">
+		<div class="row">
+			<div id="mainmenu" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				<span id="index" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span
+						class="menubutton">Home</span></span>
+				<span id="projects" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left"><span
+						class="menubutton">Projects</span></span>
+				<span id="resume" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 float-left "><span
+						class="menubutton">Resume</span></span>
+				<span id="contact" class="col-lg-2 col-md-2 float-left"><span class="menubutton">Contact</span></span>
+
+				<a id="name" class="col-lg-3 col-md-3 col-sm-3 col-xs-3" href="./index.html">Daniel Allen</a>
 			</div>
-		
+		</div>
 
 		<div class="row">
-			<div class="col-lg-1 col-md-0"></div>
-			<div id="mainbody" class="col-lg-10 col-md-12">
-				<div class="col-lg-1 col-md-0"></div>
-				<h1>Infotunes</h1>
-				<div class="row"><span class="description">
-						<p class="col-lg-12 col-sm-12">I wanted to try my hands at Python and I wanted to pull
-							information
-							from some database and do something cool with that.
-							Since I love music I decided to make it an application that pulls information from Spotify.
-							I
-							found a cool module called Spotipy and used it to collect information on users, artists,
-							albums,
-							playlists, songs etc.
-							Here is a couple examples, one graphing the Beatles albums over time with plotly, and the
-							other
-							an example of graphing the key of songs in the album "Cleopatra" by The Lumineers.</p>
-						<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-							src="https://plot.ly/~daallen303/14.embed" height="525" class="col-lg-12"></iframe>
-						<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-							src="https://plot.ly/~daallen303/44.embed" height="525" class="col-lg-12"></iframe>
-						<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-							src="https://plot.ly/~daallen303/28.embed" height="525" class="col-lg-12"></iframe>
-				</div>
-				<hr>
-				<h1>Online Menu App</h1>
-				<div class="row"><span class="description">
-						<p class="col-lg-12 col-sm-12">This pizza website turned out to be a very interesting project.
-							To
-							order a sub online the same way you
-							order a pizza would either be innefficient or take away from order customization. The
-							solution
-							was to have two standard templates one
-							for
-							pizza and calzones, and one for Stromboli, Rolls, and salads, and
-							a unique UI for the subs. All menu items are stored in a <span
-								class="maroon">database</span>
-							which allows the admin to dynamically add, edit, and
-							delete
-							menu items without breaking the code, using easy to fill forms with validation. </p>
-						<span class="projectimage"><a class="col-lg-12 col-sm-12 col-xs-12" target="_blank"
-								href="./projects/Diorios/menu.php"
-								style="background: url(./pictures/pizzascreenshot.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;"></a></span>
-				</div>
-				<hr>
-				<h1>Task Manager</h1>
-				<div class="row"><span class="description">
-						<p class="col-lg-12 col-sm-12">
-							We wanted to create a task manager that was unique and we
-							attempted
-							to accomplish that in a few different ways. For one each task and project has a status
-							assigned
-							to it; new, started, or completed. This allows
-							the user to see what needs to be worked on in an effecient and well organized manner. Also
-							assigned to a project/task is a priority, high, medium, or low.
-							The different colors of the task help the user identify the priority as
-							well as where they are shown on the page (high towards the top, low towards the bottom).
-						</p>
-						<span class="projectimage"><a class="col-lg-12 col-sm-12 col-xs-12" target="_blank"
-								href="./projects/Taskr/Login.php"
-								style="background: url(./pictures/taskrscreenshot.jpg); background-size: cover; background-position: center;"></a></span>
+			<div id="topnav" class="col-lg-12">
+				<a href="./" id="namelink">Daniel Allen</a>
+				<span id="navbutton" class="col-lg-4"><i class="fas fa-bars"></i></span>
+				<div id="mylinks" class="col-lg-12">
+					<div class="col-lg-12"><a href="./">Home</a></div>
+					<div class="col-lg-12"><a href="./Projects.html">Projects</a></div>
+					<div class="col-lg-12"><a href="./Resume.html">Resume</a></div>
+					<div class="col-lg-12"><a href="./Contact.html">Contact</a></div>
 				</div>
 			</div>
 		</div>
+
 	</div>
+
+
+	<div class="row">
+		<div class="col-lg-1 col-md-0"></div>
+		<div id="mainbody" class="col-lg-10 col-md-12">
+			<div class="col-lg-1 col-md-0"></div>
+			<h1>Infotunes</h1>
+			<div class="row"><span class="description">
+					<p class="col-lg-12 col-sm-12">I wanted to try my hands at Python and I wanted to pull
+						information
+						from some database and do something cool with that.
+						Since I love music I decided to make it an application that pulls information from Spotify.
+						I
+						found a cool module called Spotipy and used it to collect information on users, artists,
+						albums,
+						playlists, songs etc.
+						Here is a couple examples, one graphing the Beatles albums over time with plotly, and the
+						other
+						an example of graphing the key of songs in the album "Cleopatra" by The Lumineers.</p>
+					<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+						src="https://plot.ly/~daallen303/14.embed" height="525" class="col-lg-12"></iframe>
+					<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+						src="https://plot.ly/~daallen303/44.embed" height="525" class="col-lg-12"></iframe>
+					<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+						src="https://plot.ly/~daallen303/28.embed" height="525" class="col-lg-12"></iframe>
+			</div>
+			<hr>
+			<h1>Online Menu App</h1>
+			<div class="row"><span class="description">
+					<p class="col-lg-12 col-sm-12">This pizza website turned out to be a very interesting project.
+						To
+						order a sub online the same way you
+						order a pizza would either be innefficient or take away from order customization. The
+						solution
+						was to have two standard templates one
+						for
+						pizza and calzones, and one for Stromboli, Rolls, and salads, and
+						a unique UI for the subs. All menu items are stored in a <span class="maroon">database</span>
+						which allows the admin to dynamically add, edit, and
+						delete
+						menu items without breaking the code, using easy to fill forms with validation. </p>
+					<span class="projectimage"><a class="col-lg-12 col-sm-12 col-xs-12" target="_blank"
+							href="./projects/Diorios/menu.php"
+							style="background: url(./pictures/pizzascreenshot.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;"></a></span>
+			</div>
+			<hr>
+			<h1>Task Manager</h1>
+			<div class="row"><span class="description">
+					<p class="col-lg-12 col-sm-12">
+						We wanted to create a task manager that was unique and we
+						attempted
+						to accomplish that in a few different ways. For one each task and project has a status
+						assigned
+						to it; new, started, or completed. This allows
+						the user to see what needs to be worked on in an effecient and well organized manner. Also
+						assigned to a project/task is a priority, high, medium, or low.
+						The different colors of the task help the user identify the priority as
+						well as where they are shown on the page (high towards the top, low towards the bottom).
+					</p>
+					<span class="projectimage"><a class="col-lg-12 col-sm-12 col-xs-12" target="_blank"
+							href="./projects/Taskr/Login.php"
+							style="background: url(./pictures/taskrscreenshot.jpg); background-size: cover; background-position: center;"></a></span>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 
 </html>
@@ -147,5 +135,13 @@
 
 	$("#resume").click(function () {
 		document.location.href = "./Resume.html";
+	});
+	$("#navbutton").click(function () {
+		var x = document.getElementById("mylinks");
+		if (x.style.opacity == 1) {
+			x.style.opacity = 0;
+		} else {
+			x.style.opacity = 1;
+		}
 	});
 </script>

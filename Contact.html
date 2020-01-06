@@ -42,26 +42,14 @@
 		</div>
 
 		<div class="row">
-			<div id="dropdown" class="dropdown col-lg-12">
-				<button class="btn btn-secondary dropdown-toggle " type="button" style="vertical-align: middle;"
-					id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Menu <span class="glyphicon glyphicon-chevron-down "></span>
-				</button>
-
-
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" id="ddHome" href="./">
-						<div id="ddhome" class="col-lg-12">Home</div>
-					</a>
-					<a class="dropdown-item" id="ddProjects" href="./Projects.html">
-						<div id="ddprojects" class="col-lg-12">Projects</div>
-					</a>
-					<a class="dropdown-item" id="ddResume" href="./Resume.html">
-						<div id="ddresume" class="col-lg-12">Resume</div>
-					</a>
-					<a class="dropdown-item" id="ddContact" href="./Contact.html">
-						<div id="ddcontact" class="col-lg-12">Contact</div>
-					</a>
+			<div id="topnav" class="col-lg-12">
+				<a href="./" id="namelink">Daniel Allen</a>
+				<span id="navbutton" class="col-lg-4"><i class="fas fa-bars"></i></span>
+				<div id="mylinks" class="col-lg-12">
+					<div class="col-lg-12"><a href="./">Home</a></div>
+					<div class="col-lg-12"><a href="./Projects.html">Projects</a></div>
+					<div class="col-lg-12"><a href="./Resume.html">Resume</a></div>
+					<div class="col-lg-12"><a href="./Contact.html">Contact</a></div>
 				</div>
 			</div>
 		</div>
@@ -105,6 +93,14 @@
 	});
 	$("#index").click(function () {
 		document.location.href = "./";
+	});
+	$("#navbutton").click(function () {
+		var x = document.getElementById("mylinks");
+		if (x.style.opacity == 1) {
+			x.style.opacity = 0;
+		} else {
+			x.style.opacity = 1;
+		}
 	});
 
 </script>
