@@ -9,6 +9,8 @@ require_once("Other.Class.php");
 ?>
 
 <html>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+
 
 	<body>
 		<head><link rel="stylesheet" type="text/css" href="./Diorios.css" >

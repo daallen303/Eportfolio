@@ -2,7 +2,7 @@
 <?php
 require_once("Config.php");
 require("User.class.php");
-echo('<!DOCTYPE html><html> 
+echo('<html> 
 	<title>Login</title>
 	<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
