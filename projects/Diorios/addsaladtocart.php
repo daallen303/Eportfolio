@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once("Config.php");
 require_once("Salad.Class.php");
 require_once("Cart.Class.php");
@@ -25,3 +26,4 @@ $cart->addDescription("Salad");
 $cart->addQuanity($_POST["quanity".str_replace(' ', '',$allsalads[$i])]);
 }
 header('Location: ./menu.php');
+ob_flush();

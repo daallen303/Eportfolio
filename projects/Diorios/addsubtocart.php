@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once("Config.php");
 require_once("Sub.Class.php");
 require_once("Cart.Class.php");
@@ -59,4 +60,5 @@ $cart->addName($name);
 $cart->addDescription("Sub w/".$toppings);
 $cart->addQuanity($quanity);
 header('Location: ./menu.php');
-//header('Location: ./menu1.php');
+
+ob_flush();

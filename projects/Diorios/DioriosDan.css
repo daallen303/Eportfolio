@@ -622,7 +622,9 @@ width: 80%;
 margin-left:auto;
 margin-right: auto; 
 background: lightgray;
-height: 100px;
+height: 150px;
+overflow: scroll;
+
 }
 .spacekeeper
 {
@@ -692,7 +694,7 @@ width: 12%;
 #formsubmit 
 
 {
-display: none;
+display: block;
 text-align:center;
 width: 80%;
 margin-left:auto;

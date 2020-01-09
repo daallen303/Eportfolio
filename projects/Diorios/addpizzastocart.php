@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once("Config.php");
 require_once("Pizza.Class.php");
 require_once("Cart.Class.php");
@@ -52,4 +53,5 @@ $cart->addPrice($price);
 $cart->addName($name);
 $cart->addDescription('Pizza w/'.$_POST["alltoppings"]);
 $cart->addQuanity($quanity);
-header('Location: ./menu.php');
+header("Location:./menu.php");
+ob_flush();

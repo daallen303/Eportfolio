@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once("Config.php");
 require_once("Other.Class.php");
 require_once("Cart.Class.php");
@@ -28,3 +29,4 @@ $cart->addDescription("strombolli");
 $cart->addQuanity($quanity);
 }
 header('Location: ./menu.php');
+ob_flush();

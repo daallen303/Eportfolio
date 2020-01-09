@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 require_once("Config.php");
 require_once("Cart.Class.php");
 require_once("Calzones.Class.php");
@@ -23,3 +23,4 @@ $cart->addDescription("Calzone w/".$toppings);
 $cart->addQuanity($quanity);
 
 header('Location: ./menu.php');
+ob_flush();

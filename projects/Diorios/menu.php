@@ -568,9 +568,9 @@
     <br />
 
 
-    <div id= "cart">
+    <!-- <div id= "cart">
 
-      <?php
+       <?php
       if(!empty($_SESSION["cart"]["prices"]))
       {
         for($i =0; $i < count($_SESSION["cart"]["prices"]); $i++)
@@ -607,14 +607,12 @@
             echo ("document.formsubmit.price.value = 'Total Price:  $' + dm(0.0); ");
             echo ("</script>");
           }
-          ?>
+          ?> 
       </span>
-
-    </div>
-
+    </div> -->
 
     <form method="post" name="formsubmit"
-        action="mailto:gamblekirby@aol.com?subject=Diorios Online Order"
+        action="mailto:daallen303@gmail.com?subject=Diorios Online Order"
         onsubmit="return validateNameAndPrice()"
         enctype="text/plain">
 
@@ -660,8 +658,9 @@
 
         <br />
 
-        Name           <input name="name" />
-        Phone or Email <input name="phoneoremail" />
+        <div>Name</div><input name="name" />
+        </br>
+        <div>Phone or Email</div><input name="phoneoremail" />
         <br /><br />
 
         <!-- submit button sends the form-data to wherever the form's action= specifies-->

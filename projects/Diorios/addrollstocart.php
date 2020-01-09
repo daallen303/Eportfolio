@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once("Config.php");
 require_once("Other.Class.php");
 require_once("Cart.Class.php");
@@ -26,3 +27,4 @@ $cart->addDescription("Roll");
 $cart->addQuanity($_POST["quanity".str_replace(' ', '',$allrolls[$i])]);
 }
 header('Location: ./menu.php');
+ob_flush();
