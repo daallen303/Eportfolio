@@ -3,10 +3,17 @@ require_once("session.class.php");
 
 $session = new Session();
 
+$host = "mysql.daallen.xyz";
+$user = "danall38";
+$pass = "Blackpen1!";
+$db = "daallen_eportfolio";
+
+/*
 $host = "localhost";
 $user = "root";
 $pass = "Da#1005576";
-$db = "taskr";
+$db = "diorios";
+* */
 $charset = 'utf8';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

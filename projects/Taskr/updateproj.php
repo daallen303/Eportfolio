@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 require_once("Config.php");
 require_once("projects.class.php");
 require_once("task.class.php");
@@ -9,3 +9,4 @@ $project = new Project();
 
 $project->updateProject($_POST["id"], $_POST["name"], $_POST["description"], $_POST["priority"]);
 header("Location: ./projects.php");
+ob_flush();
